@@ -1,0 +1,39 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[  ]
+_global_script_class_icons={
+
+}
+
+[application]
+
+config/name="godot-slot"
+run/main_scene="res://core/States.tscn"
+config/icon="res://icon.png"
+
+[autoload]
+
+Globals="*res://globals.gd"
+
+[display]
+
+window/size/width=1280
+window/size/height=720
+window/stretch/mode="2d"
+window/stretch/aspect="keep"
+
+[editor_plugins]
+
+enabled=PoolStringArray( "codeandweb.texturepacker" )
+
+[rendering]
+
+environment/default_environment="res://default_env.tres"

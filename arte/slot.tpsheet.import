@@ -1,0 +1,15 @@
+[remap]
+
+importer="codeandweb.texturepacker_import_spritesheet"
+type="Resource"
+path="res://.import/slot.tpsheet-7faf9d3a86bd75cfde94e5f8faf6e39c.res"
+
+[deps]
+
+files=[ "res://arte/slot.sprites/arrow.tres", "res://arte/slot.sprites/btn_settings.tres", "res://arte/slot.sprites/btn_help.tres", "res://arte/slot.sprites/btn_spin.tres", "res://arte/slot.sprites/menu_item_bg.tres", "res://arte/slot.sprites/btn_stop.tres", "res://arte/slot.sprites/top_item_bg.tres", "res://arte/slot.sprites/seven_b.tres", "res://arte/slot.sprites/lemon.tres", "res://arte/slot.sprites/horseshoe_b.tres", "res://arte/slot.sprites/lemon_b.tres", "res://arte/slot.sprites/seven.tres", "res://arte/slot.sprites/horseshoe.tres", "res://arte/slot.sprites/watermelon.tres", "res://arte/slot.sprites/heart.tres", "res://arte/slot.sprites/cherry_b.tres", "res://arte/slot.sprites/heart_b.tres", "res://arte/slot.sprites/bell.tres", "res://arte/slot.sprites/bell_b.tres", "res://arte/slot.sprites/cherry.tres", "res://arte/slot.sprites/watermelon_b.tres", "res://arte/slot.sprites/diamond_b.tres", "res://arte/slot.sprites/diamond.tres", "res://arte/slot.sprites/border.tres", "res://arte/slot.sprites/menu_bg.tres" ]
+
+source_file="res://arte/slot.tpsheet"
+dest_files=[ "res://.import/slot.tpsheet-7faf9d3a86bd75cfde94e5f8faf6e39c.res", "res://arte/slot.sprites/arrow.tres", "res://arte/slot.sprites/btn_settings.tres", "res://arte/slot.sprites/btn_help.tres", "res://arte/slot.sprites/btn_spin.tres", "res://arte/slot.sprites/menu_item_bg.tres", "res://arte/slot.sprites/btn_stop.tres", "res://arte/slot.sprites/top_item_bg.tres", "res://arte/slot.sprites/seven_b.tres", "res://arte/slot.sprites/lemon.tres", "res://arte/slot.sprites/horseshoe_b.tres", "res://arte/slot.sprites/lemon_b.tres", "res://arte/slot.sprites/seven.tres", "res://arte/slot.sprites/horseshoe.tres", "res://arte/slot.sprites/watermelon.tres", "res://arte/slot.sprites/heart.tres", "res://arte/slot.sprites/cherry_b.tres", "res://arte/slot.sprites/heart_b.tres", "res://arte/slot.sprites/bell.tres", "res://arte/slot.sprites/bell_b.tres", "res://arte/slot.sprites/cherry.tres", "res://arte/slot.sprites/watermelon_b.tres", "res://arte/slot.sprites/diamond_b.tres", "res://arte/slot.sprites/diamond.tres", "res://arte/slot.sprites/border.tres", "res://arte/slot.sprites/menu_bg.tres" ]
+
+[params]
+

@@ -1,0 +1,393 @@
+{
+	"textures": [
+		{
+			"image": "slot.png",
+			"size": {
+				"w": 1024,
+				"h": 1917
+			},
+			"sprites": [
+				{
+					"filename": "arrow.png",
+					"region": {
+						"x": 0,
+						"y": 0,
+						"w": 15,
+						"h": 12
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "btn_settings.png",
+					"region": {
+						"x": 15,
+						"y": 0,
+						"w": 54,
+						"h": 53
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "btn_help.png",
+					"region": {
+						"x": 69,
+						"y": 0,
+						"w": 55,
+						"h": 54
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "btn_spin.png",
+					"region": {
+						"x": 124,
+						"y": 0,
+						"w": 112,
+						"h": 113
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "menu_item_bg.png",
+					"region": {
+						"x": 236,
+						"y": 0,
+						"w": 143,
+						"h": 42
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "btn_stop.png",
+					"region": {
+						"x": 379,
+						"y": 0,
+						"w": 193,
+						"h": 192
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "top_item_bg.png",
+					"region": {
+						"x": 572,
+						"y": 0,
+						"w": 198,
+						"h": 36
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "seven_b.png",
+					"region": {
+						"x": 0,
+						"y": 192,
+						"w": 256,
+						"h": 256
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "lemon.png",
+					"region": {
+						"x": 256,
+						"y": 192,
+						"w": 256,
+						"h": 256
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "horseshoe_b.png",
+					"region": {
+						"x": 512,
+						"y": 192,
+						"w": 256,
+						"h": 256
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "lemon_b.png",
+					"region": {
+						"x": 768,
+						"y": 192,
+						"w": 256,
+						"h": 256
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "seven.png",
+					"region": {
+						"x": 0,
+						"y": 448,
+						"w": 256,
+						"h": 256
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "horseshoe.png",
+					"region": {
+						"x": 256,
+						"y": 448,
+						"w": 256,
+						"h": 256
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "watermelon.png",
+					"region": {
+						"x": 512,
+						"y": 448,
+						"w": 256,
+						"h": 256
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "heart.png",
+					"region": {
+						"x": 768,
+						"y": 448,
+						"w": 256,
+						"h": 256
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "cherry_b.png",
+					"region": {
+						"x": 0,
+						"y": 704,
+						"w": 256,
+						"h": 256
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "heart_b.png",
+					"region": {
+						"x": 256,
+						"y": 704,
+						"w": 256,
+						"h": 256
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "bell.png",
+					"region": {
+						"x": 512,
+						"y": 704,
+						"w": 256,
+						"h": 256
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "bell_b.png",
+					"region": {
+						"x": 768,
+						"y": 704,
+						"w": 256,
+						"h": 256
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "cherry.png",
+					"region": {
+						"x": 0,
+						"y": 960,
+						"w": 256,
+						"h": 256
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "watermelon_b.png",
+					"region": {
+						"x": 256,
+						"y": 960,
+						"w": 256,
+						"h": 256
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "diamond_b.png",
+					"region": {
+						"x": 512,
+						"y": 960,
+						"w": 256,
+						"h": 256
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "diamond.png",
+					"region": {
+						"x": 768,
+						"y": 960,
+						"w": 256,
+						"h": 256
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "border.png",
+					"region": {
+						"x": 0,
+						"y": 1216,
+						"w": 962,
+						"h": 558
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "menu_bg.png",
+					"region": {
+						"x": 0,
+						"y": 1774,
+						"w": 1024,
+						"h": 143
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "1.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:6bb30ac93361d6a0d4dd0eeb9ad26d6d:4f3240563505cb56369aa158098017c2:37b90c0d745cf5e8cf7952f8cb0243d9$"
+	}
+}
