@@ -7,13 +7,16 @@ var current
 var next
 
 onready var states = {
-	\"main\" : preload(\"res://estados/main.tscn\")
+	\"main\" : preload(\"res://estados/main.tscn\"),
+	\"freespin\": preload(\"res://estados/freespin.tscn\"),
+	\"bonus\" : preload(\"res://estados/bonus.tscn\"),
+	\"doubleup\" : preload(\"res://estados/double up.tscn\"),
 }
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	if states.size() > 0:
-		next = states[\"main\"]
+		next = states[states.keys()[0]]
 		enter_state()
 
 func enter_state():
@@ -56,7 +59,12 @@ const ENDPOINT = \"http://jeronimoschreyer.me/slot-server/public/\"
 func _ready():
 	pass # Replace with function body.
 
-func send(action):
+func send(action, parameters=[]):
+	if parameters.size() > 0:
+		action = action + \"?\"
+		for i in range(parameters.size()):
+			action = action + parameters[i].keys()[0] + \"=\" + parameters[i].values()[0] + \"&\"
+		action = action.substr(0, action.length() - 1)
 	request(ENDPOINT + action)
 	return self
 
