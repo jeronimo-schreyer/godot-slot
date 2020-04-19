@@ -1,0 +1,36 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://estados/freespin/personajes/cowboy.fbx" type="PackedScene" id=1]
+
+[sub_resource type="AnimationNodeAnimation" id=1]
+animation = "Root|Talking"
+
+[sub_resource type="AnimationNodeAnimation" id=2]
+animation = "Root|Talking"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=3]
+switch_mode = 2
+auto_advance = true
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=4]
+switch_mode = 2
+auto_advance = true
+
+[sub_resource type="AnimationNodeStateMachine" id=5]
+states/Root|Talking/node = SubResource( 2 )
+states/Root|Talking/position = Vector2( 444, 62 )
+"states/Root|Talking 2/node" = SubResource( 1 )
+"states/Root|Talking 2/position" = Vector2( 691, 62 )
+transitions = [ "Root|Talking", "Root|Talking 2", SubResource( 3 ), "Root|Talking 2", "Root|Talking", SubResource( 4 ) ]
+start_node = "Root|Talking"
+
+[sub_resource type="AnimationNodeStateMachinePlayback" id=6]
+
+[node name="cowboy" instance=ExtResource( 1 )]
+
+[node name="AnimationTree" type="AnimationTree" parent="." index="2"]
+tree_root = SubResource( 5 )
+anim_player = NodePath("../AnimationPlayer")
+active = true
+root_motion_track = NodePath("Root")
+parameters/playback = SubResource( 6 )

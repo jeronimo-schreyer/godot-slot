@@ -1,0 +1,177 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://core/Symbol.tscn" type="PackedScene" id=1]
+[ext_resource path="res://arte/slot.sprites/bell.tres" type="Texture" id=2]
+
+[sub_resource type="GDScript" id=1]
+script/source = "extends Control
+
+onready var stateMachine = $AnimationTree.get(\"parameters/playback\")
+
+const STATE_IDLE = \"Idle\"
+const STATE_SPINNING = \"Spinning\"
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	pass # Replace with function body.
+
+func startSpin():
+	stateMachine.travel(STATE_SPINNING)
+
+func stopSpin():
+	stateMachine.travel(STATE_IDLE)
+"
+
+[sub_resource type="AnimationNodeAnimation" id=2]
+animation = "Idle"
+
+[sub_resource type="AnimationNodeAnimation" id=3]
+animation = "Spinning"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=4]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=5]
+switch_mode = 2
+
+[sub_resource type="AnimationNodeStateMachine" id=6]
+states/Idle/node = SubResource( 2 )
+states/Idle/position = Vector2( 328, 109 )
+states/Spinning/node = SubResource( 3 )
+states/Spinning/position = Vector2( 573, 109 )
+transitions = [ "Idle", "Spinning", SubResource( 4 ), "Spinning", "Idle", SubResource( 5 ) ]
+start_node = "Idle"
+
+[sub_resource type="AnimationNodeStateMachinePlayback" id=7]
+
+[sub_resource type="Animation" id=8]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("VBoxContainer:rect_position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ) ]
+}
+
+[sub_resource type="Animation" id=9]
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("VBoxContainer:rect_position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, -256 ), Vector2( 0, 0 ) ]
+}
+
+[node name="Reel" type="Control"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -128.0
+margin_top = -520.0
+margin_right = 128.0
+margin_bottom = 520.0
+rect_clip_content = true
+script = SubResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AnimationTree" type="AnimationTree" parent="."]
+tree_root = SubResource( 6 )
+anim_player = NodePath("../AnimationPlayer")
+active = true
+parameters/playback = SubResource( 7 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/Idle = SubResource( 8 )
+anims/Spinning = SubResource( 9 )
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -128.0
+margin_top = -520.0
+margin_right = 128.0
+margin_bottom = 776.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Symbol" parent="VBoxContainer" instance=ExtResource( 1 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 0.0
+margin_top = 0.0
+margin_right = 256.0
+margin_bottom = 256.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource( 2 )
+
+[node name="Symbol2" parent="VBoxContainer" instance=ExtResource( 1 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 0.0
+margin_top = 260.0
+margin_right = 256.0
+margin_bottom = 516.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource( 2 )
+
+[node name="Symbol3" parent="VBoxContainer" instance=ExtResource( 1 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 0.0
+margin_top = 520.0
+margin_right = 256.0
+margin_bottom = 776.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource( 2 )
+
+[node name="Symbol4" parent="VBoxContainer" instance=ExtResource( 1 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 0.0
+margin_top = 780.0
+margin_right = 256.0
+margin_bottom = 1036.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource( 2 )
+
+[node name="Symbol5" parent="VBoxContainer" instance=ExtResource( 1 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 0.0
+margin_top = 1040.0
+margin_right = 256.0
+margin_bottom = 1296.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource( 2 )

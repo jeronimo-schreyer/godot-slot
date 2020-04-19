@@ -1,0 +1,61 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://estados/freespin/entorno/entorno.fbx" type="PackedScene" id=1]
+[ext_resource path="res://estados/freespin/personajes/bad guy clapping.tscn" type="PackedScene" id=2]
+[ext_resource path="res://estados/freespin/personajes/cowgirl.tscn" type="PackedScene" id=3]
+[ext_resource path="res://estados/freespin/personajes/cowboy.tscn" type="PackedScene" id=4]
+
+[node name="entorno" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.42391, 0, 1.42391 )
+
+[node name="CameraFreeSpin-05" parent="." index="17"]
+transform = Transform( -0.0144695, 0.186685, -0.982313, 0.00155781, 0.982419, 0.186682, 0.999894, 0.00117094, -0.014506, 0.875, 0.349611, -1.408 )
+current = true
+fov = 50.0
+far = 10.0
+
+[node name="CameraCARTAS-01" parent="." index="18"]
+transform = Transform( 0.977969, -0.0825478, 0.191736, -0.0239869, 0.867971, 0.496035, -0.207368, -0.489706, 0.846869, 1.30717, 0.252819, -1.27689 )
+fov = 40.0
+
+[node name="SM_Prop_Bottle_349" parent="." index="302"]
+transform = Transform( 5.96046e-10, 0.01, 1.49012e-09, 5.96046e-10, -2.38419e-09, 0.01, 0.01, -1.49012e-09, -2.38419e-09, -1.50204e-05, 0, 0.136574 )
+
+[node name="SM_Prop_Cup_337" parent="." index="303"]
+transform = Transform( 5.96046e-10, 0.01, 1.49012e-09, 5.96046e-10, -2.38419e-09, 0.01, 0.01, -1.49012e-09, -2.38419e-09, -1.50204e-05, 0, 0.136574 )
+
+[node name="SM_Prop_Table_01_336" parent="." index="304"]
+transform = Transform( 5.96046e-10, 0.01, 1.49012e-09, 5.96046e-10, -2.38419e-09, 0.01, 0.01, -1.49012e-09, -2.38419e-09, -1.50204e-05, 0, 0.136574 )
+
+[node name="SM_Prop_Stool_Round_01_333" parent="." index="305"]
+transform = Transform( 5.96046e-10, 0.01, 1.49012e-09, 5.96046e-10, -2.38419e-09, 0.01, 0.01, -1.49012e-09, -2.38419e-09, -1.50204e-05, 0, 0.105574 )
+
+[node name="SM_Prop_Stool_Round_5" parent="." index="306"]
+transform = Transform( 5.96046e-10, 0.01, 1.49012e-09, 5.96046e-10, -2.38419e-09, 0.01, 0.01, -1.49012e-09, -2.38419e-09, -1.50204e-05, 0, 0.136574 )
+
+[node name="SM_Prop_Stool_Round_6" parent="." index="307"]
+transform = Transform( 5.96046e-10, 0.01, 1.49012e-09, 5.96046e-10, -2.38419e-09, 0.01, 0.01, -1.49012e-09, -2.38419e-09, -1.50204e-05, 0, 0.136574 )
+
+[node name="SM_Prop_Stool_Round_7" parent="." index="308"]
+transform = Transform( 5.96046e-10, 0.01, 1.49012e-09, 5.96046e-10, -2.38419e-09, 0.01, 0.01, -1.49012e-09, -2.38419e-09, -1.50204e-05, 0, 0.136574 )
+
+[node name="SM_Prop_Bottle_340" parent="." index="309"]
+transform = Transform( 5.96046e-10, 0.01, 1.49012e-09, 5.96046e-10, -2.38419e-09, 0.01, 0.01, -1.49012e-09, -2.38419e-09, -1.50204e-05, 0, 0.136574 )
+
+[node name="SM_Prop_Bottle_343" parent="." index="310"]
+transform = Transform( 5.96046e-10, 0.01, 1.49012e-09, 5.96046e-10, -2.38419e-09, 0.01, 0.01, -1.49012e-09, -2.38419e-09, -1.50204e-05, 0, 0.136574 )
+
+[node name="SM_Prop_Cup_334" parent="." index="311"]
+transform = Transform( 5.96046e-10, 0.01, 1.49012e-09, 5.96046e-10, -2.38419e-09, 0.01, 0.01, -1.49012e-09, -2.38419e-09, -1.50204e-05, 0, 0.136574 )
+
+[node name="SM_Prop_Cup_01_331" parent="." index="312"]
+transform = Transform( 5.96046e-10, 0.01, 1.49012e-09, 5.96046e-10, -2.38419e-09, 0.01, 0.01, -1.49012e-09, -2.38419e-09, -1.50204e-05, 0, 0.136574 )
+
+[node name="bad guy" parent="." index="357" instance=ExtResource( 2 )]
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 1.25709, 0.0592496, -1.60487 )
+
+[node name="cowgirl2" parent="." index="358" instance=ExtResource( 3 )]
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 1.37521, 0.047, -1.13225 )
+
+[node name="cowboy" parent="." index="359" instance=ExtResource( 4 )]
+transform = Transform( -0.0995343, 0, 0.0096402, 0, 0.1, 0, -0.0096402, 0, -0.0995343, 1.28176, 0.0563807, -1.34627 )

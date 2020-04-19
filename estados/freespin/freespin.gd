@@ -10,7 +10,7 @@ func _ready():
 
 func enter():
 	print("Free Spin::enter")
-	play()
+	#play()
 
 func play():
 	

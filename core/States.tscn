@@ -7,10 +7,10 @@ var current
 var next
 
 onready var states = {
-	\"main\" : preload(\"res://estados/main.tscn\"),
-	\"freespin\": preload(\"res://estados/freespin.tscn\"),
 	\"bonus\" : preload(\"res://estados/bonus.tscn\"),
+	\"freespin\": preload(\"res://estados/freespin.tscn\"),
 	\"doubleup\" : preload(\"res://estados/double up.tscn\"),
+	\"main\" : preload(\"res://estados/main.tscn\"),
 }
 
 # Called when the node enters the scene tree for the first time.
