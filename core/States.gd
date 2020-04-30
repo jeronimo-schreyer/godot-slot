@@ -4,9 +4,9 @@ var current
 var next
 
 onready var states = {
+	"freespin": preload("res://estados/freespin.tscn"),
 	"main" : preload("res://estados/main.tscn"),
 	"bonus" : preload("res://estados/bonus.tscn"),
-	"freespin": preload("res://estados/freespin.tscn"),
 	"doubleup" : preload("res://estados/double up.tscn"),
 }
 
