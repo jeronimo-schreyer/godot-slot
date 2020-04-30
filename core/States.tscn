@@ -1,43 +1,13 @@
 [gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://core/States.gd" type="Script" id=1]
-
-[sub_resource type="GDScript" id=2]
-script/source = "extends HTTPRequest
-
-signal finished
-signal error
-
-const ENDPOINT = \"http://jeronimoschreyer.me/slot-server/public/\"
-
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	pass # Replace with function body.
-
-func send(action, parameters=[]):
-	if parameters.size() > 0:
-		action = action + \"?\"
-		for i in range(parameters.size()):
-			action = action + parameters[i].keys()[0] + \"=\" + parameters[i].values()[0] + \"&\"
-		action = action.substr(0, action.length() - 1)
-	request(ENDPOINT + action)
-	return self
-
-func handler(result, response_code, headers, body):
-	var json
-	match response_code:
-		200:
-			json = JSON.parse(body.get_string_from_utf8())
-			emit_signal(\"finished\", json)
-		_:
-			emit_signal(\"error\", response_code)
-"
+[ext_resource path="res://core/HTTPRequest.gd" type="Script" id=2]
 
 [node name="States" type="Node"]
 script = ExtResource( 1 )
 
 [node name="HTTPRequest" type="HTTPRequest" parent="."]
-script = SubResource( 2 )
+script = ExtResource( 2 )
 [connection signal="error" from="HTTPRequest" to="." method="http_error"]
 [connection signal="finished" from="HTTPRequest" to="." method="http_finished"]
 [connection signal="request_completed" from="HTTPRequest" to="HTTPRequest" method="handler"]

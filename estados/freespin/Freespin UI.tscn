@@ -34,61 +34,65 @@
 [node name="Freespin UI" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_right = -256.0
-margin_bottom = 48.0001
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="reel" type="TextureRect" parent="."]
-anchor_right = 1.0
-anchor_bottom = 1.0
-margin_left = 114.0
-margin_top = 30.0
-margin_right = -120.0
-margin_bottom = -100.0
+anchor_left = 0.497
+anchor_top = 0.454
+anchor_right = 0.5
+anchor_bottom = 0.454
+margin_left = -394.928
+margin_top = -318.672
+margin_right = 392.0
+margin_bottom = 319.328
 texture = ExtResource( 7 )
 
 [node name="background" type="TextureRect" parent="reel"]
 show_behind_parent = true
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-margin_left = -375.0
-margin_top = -300.0
-margin_right = 375.0
-margin_bottom = 300.0
+anchor_left = 0.025
+anchor_top = 0.03
+anchor_right = 0.975
+anchor_bottom = 0.97
+margin_left = 0.25
+margin_top = -0.140001
+margin_right = -0.25
+margin_bottom = 0.139954
 texture = ExtResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Reels" parent="reel" instance=ExtResource( 1 )]
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-margin_left = -384.0
-margin_top = -302.0
-margin_right = 382.0
-margin_bottom = 298.0
+anchor_left = 0.014
+anchor_top = 0.027
+anchor_right = 0.984
+anchor_bottom = 0.967
+margin_left = -0.0600004
+margin_top = -0.226
+margin_right = -0.360046
+margin_bottom = 0.0539551
 
-[node name="logo" type="TextureRect" parent="."]
+[node name="logo" type="TextureRect" parent="reel"]
 anchor_right = 1.0
-anchor_bottom = 1.0
-margin_left = 322.0
-margin_top = 2.0
-margin_right = -318.0
-margin_bottom = -690.0
+margin_left = 208.0
+margin_top = -28.0
+margin_right = -198.0
+margin_bottom = 48.0
 texture = ExtResource( 12 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="main_menu" type="TextureRect" parent="."]
-anchor_right = 1.0
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
 anchor_bottom = 1.0
-margin_left = 58.5
-margin_top = 644.0
-margin_right = -58.5
+margin_left = -453.5
+margin_top = -124.0
+margin_right = 453.5
 texture = ExtResource( 6 )
 
 [node name="auto" type="TextureButton" parent="main_menu"]

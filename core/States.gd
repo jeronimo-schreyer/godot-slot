@@ -12,6 +12,11 @@ onready var states = {
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	OS.min_window_size = Vector2(
+		ProjectSettings.get("display/window/size/min_width"),
+		ProjectSettings.get("display/window/size/min_height")
+	)
+	
 	if states.size() > 0:
 		next = states[states.keys()[0]]
 		enter_state()

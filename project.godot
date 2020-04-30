@@ -25,10 +25,10 @@ Globals="*res://globals.gd"
 
 [display]
 
-window/size/width=1280
-window/size/height=720
-window/stretch/mode="2d"
+window/size/height=768
 window/stretch/aspect="keep"
+window/size/min_width=1024
+window/size/min_height=768
 
 [editor_plugins]
 

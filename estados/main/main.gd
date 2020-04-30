@@ -14,20 +14,20 @@ func enter():
 func play():
 	
 	#start reels
-	$Environment/Reel/Viewport/Reels.startSpin()
+	$"Main UI/reel/Reels".startSpin()
 	
 	# send request
-	var req = yield(http.send("spin"), "finished")
-	print(req.result.TOTALPAY)
+	#var req = yield(http.send("spin"), "finished")
+	#print(req.result.TOTALPAY)
 	
 	# stop reels on stop points
-	$Environment/Reel/Viewport/Reels.stopSpin(req.result.STOP)
+	#$Environment/Reel/Viewport/Reels.stopSpin(req.result.STOP)
 	
 	# show ramp
 	
 	# show winning combinations
 	
 	# update jackpot values
-	$UI.updateJackpotValues(req.result)
+	#$UI.updateJackpotValues(req.result)
 	
-	fsm.exit_state()
+	#fsm.exit_state()

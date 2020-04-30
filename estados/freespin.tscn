@@ -10,3 +10,6 @@ script = ExtResource( 3 )
 [node name="entorno2" parent="." instance=ExtResource( 5 )]
 
 [node name="Freespin UI" parent="." instance=ExtResource( 1 )]
+rect_min_size = Vector2( 1024, 768 )
+size_flags_horizontal = 5
+size_flags_vertical = 5
