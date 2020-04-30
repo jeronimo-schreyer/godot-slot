@@ -1,0 +1,15 @@
+[remap]
+
+importer="codeandweb.texturepacker_import_spritesheet"
+type="Resource"
+path="res://.import/atlassym2.tpsheet-39aff670fe75a9be79d2801594e1f63d.res"
+
+[deps]
+
+files=[ "res://arte/atlassym2.sprites/sym_badguy.tres", "res://arte/atlassym2.sprites/sym_k_b.tres", "res://arte/atlassym2.sprites/sym_k.tres", "res://arte/atlassym2.sprites/sym_badguy_b.tres", "res://arte/atlassym2.sprites/sym_a_b.tres", "res://arte/atlassym2.sprites/sym_sherif_b.tres", "res://arte/atlassym2.sprites/sym_a.tres", "res://arte/atlassym2.sprites/sym_q_b.tres", "res://arte/atlassym2.sprites/sym_sherif.tres", "res://arte/atlassym2.sprites/sym_q.tres", "res://arte/atlassym2.sprites/sym_bonus_b.tres", "res://arte/atlassym2.sprites/sym_girl_b.tres", "res://arte/atlassym2.sprites/sym_cards_b.tres", "res://arte/atlassym2.sprites/sym_girl.tres", "res://arte/atlassym2.sprites/sym_placa_b.tres", "res://arte/atlassym2.sprites/sym_10_b.tres", "res://arte/atlassym2.sprites/sym_bonus.tres", "res://arte/atlassym2.sprites/sym_10.tres", "res://arte/atlassym2.sprites/sym_9.tres", "res://arte/atlassym2.sprites/sym_cards.tres", "res://arte/atlassym2.sprites/sym_9_b.tres", "res://arte/atlassym2.sprites/sym_placa.tres", "res://arte/atlassym2.sprites/sym_j_b.tres", "res://arte/atlassym2.sprites/sym_j.tres" ]
+
+source_file="res://arte/atlassym2.tpsheet"
+dest_files=[ "res://.import/atlassym2.tpsheet-39aff670fe75a9be79d2801594e1f63d.res", "res://arte/atlassym2.sprites/sym_badguy.tres", "res://arte/atlassym2.sprites/sym_k_b.tres", "res://arte/atlassym2.sprites/sym_k.tres", "res://arte/atlassym2.sprites/sym_badguy_b.tres", "res://arte/atlassym2.sprites/sym_a_b.tres", "res://arte/atlassym2.sprites/sym_sherif_b.tres", "res://arte/atlassym2.sprites/sym_a.tres", "res://arte/atlassym2.sprites/sym_q_b.tres", "res://arte/atlassym2.sprites/sym_sherif.tres", "res://arte/atlassym2.sprites/sym_q.tres", "res://arte/atlassym2.sprites/sym_bonus_b.tres", "res://arte/atlassym2.sprites/sym_girl_b.tres", "res://arte/atlassym2.sprites/sym_cards_b.tres", "res://arte/atlassym2.sprites/sym_girl.tres", "res://arte/atlassym2.sprites/sym_placa_b.tres", "res://arte/atlassym2.sprites/sym_10_b.tres", "res://arte/atlassym2.sprites/sym_bonus.tres", "res://arte/atlassym2.sprites/sym_10.tres", "res://arte/atlassym2.sprites/sym_9.tres", "res://arte/atlassym2.sprites/sym_cards.tres", "res://arte/atlassym2.sprites/sym_9_b.tres", "res://arte/atlassym2.sprites/sym_placa.tres", "res://arte/atlassym2.sprites/sym_j_b.tres", "res://arte/atlassym2.sprites/sym_j.tres" ]
+
+[params]
+

@@ -1,0 +1,783 @@
+{
+	"textures": [
+		{
+			"image": "atlas.png",
+			"size": {
+				"w": 1570,
+				"h": 1784
+			},
+			"sprites": [
+				{
+					"filename": "bb_EXPORT_main_reel_frame_x=96_y=15_w=920_h=664.png",
+					"region": {
+						"x": 1,
+						"y": 1,
+						"w": 824,
+						"h": 664
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "bb_EXPORT_help_base_x=142_y=39_w=742_h=609.png",
+					"region": {
+						"x": 827,
+						"y": 1,
+						"w": 742,
+						"h": 609
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "bb_EXPORT_fs_reel_frame_x=114_y=30_w=790_h=638.png",
+					"region": {
+						"x": 1,
+						"y": 667,
+						"w": 790,
+						"h": 638
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "bb_EXPORT_dialog_base_x=204_y=175_w=688_h=389.png",
+					"region": {
+						"x": 1,
+						"y": 1307,
+						"w": 624,
+						"h": 389
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "bb_EXPORT_rampa_base_x=264_y=546_w=506_h=85.png",
+					"region": {
+						"x": 1,
+						"y": 1698,
+						"w": 506,
+						"h": 85
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "bb_EXPORT_main_reel_bg_x=134_y=49_w=750_h=600.png",
+					"region": {
+						"x": 793,
+						"y": 667,
+						"w": 750,
+						"h": 600
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "bb_EXPORT_main_logo_x=256_y=0_w=518_h=78.png",
+					"region": {
+						"x": 793,
+						"y": 1269,
+						"w": 518,
+						"h": 78
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "bb_EXPORT_main_menu_base_x=56_y=644_w=907_h=124.png",
+					"region": {
+						"x": 627,
+						"y": 1349,
+						"w": 907,
+						"h": 124
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "bb_EXPORT_dialog_fswelcome_fslogo_x=282_y=330_w=457_h=90.png",
+					"region": {
+						"x": 627,
+						"y": 1475,
+						"w": 457,
+						"h": 90
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "bb_EXPORT_fs_logo_x=322_y=2_w=384_h=76.png",
+					"region": {
+						"x": 627,
+						"y": 1567,
+						"w": 384,
+						"h": 76
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "bb_EXPORT_settings_base_x=391_y=245_w=256_h=207.png",
+					"region": {
+						"x": 1086,
+						"y": 1475,
+						"w": 256,
+						"h": 207
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "bb_EXPORT_main_jackpot_base_x=798_y=0_w=219_h=90.png",
+					"region": {
+						"x": 1344,
+						"y": 1475,
+						"w": 219,
+						"h": 90
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "bb_EXPORT_main_menu_btn_spin_dimmed_x=448_y=651_w=110_h=104.png",
+					"region": {
+						"x": 1344,
+						"y": 1567,
+						"w": 110,
+						"h": 104
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "bb_EXPORT_main_menu_btn_double_dimmed_x=164_y=706_w=168_h=43.png",
+					"region": {
+						"x": 827,
+						"y": 612,
+						"w": 168,
+						"h": 43
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "bb_EXPORT_main_menu_btn_double_on_x=164_y=706_w=168_h=43.png",
+					"region": {
+						"x": 1313,
+						"y": 1269,
+						"w": 168,
+						"h": 43
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "bb_EXPORT_main_menu_btn_dpuble_down_x=164_y=706_w=168_h=43.png",
+					"region": {
+						"x": 627,
+						"y": 1645,
+						"w": 168,
+						"h": 43
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "bb_EXPORT_main_menu_btn_spin_down_x=448_y=651_w=110_h=104.png",
+					"region": {
+						"x": 1456,
+						"y": 1567,
+						"w": 110,
+						"h": 104
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "bb_EXPORT_main_menu_btn_auto_dimmed_x=357_y=683_w=141_h=47.png",
+					"region": {
+						"x": 997,
+						"y": 612,
+						"w": 141,
+						"h": 47
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "bb_EXPORT_main_menu_btn_auto_down_x=357_y=683_w=141_h=47.png",
+					"region": {
+						"x": 1140,
+						"y": 612,
+						"w": 141,
+						"h": 47
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "bb_EXPORT_main_menu_btn_auto_on_x=357_y=683_w=141_h=47.png",
+					"region": {
+						"x": 1283,
+						"y": 612,
+						"w": 141,
+						"h": 47
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "bb_EXPORT_main_menu_btn_turbo_dimmed_x=514_y=683_w=141_h=47.png",
+					"region": {
+						"x": 1426,
+						"y": 612,
+						"w": 141,
+						"h": 47
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "bb_EXPORT_main_menu_btn_turbo_down_x=514_y=683_w=141_h=47.png",
+					"region": {
+						"x": 797,
+						"y": 1645,
+						"w": 141,
+						"h": 47
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "bb_EXPORT_main_menu_btn_turbo_on_x=514_y=683_w=141_h=47.png",
+					"region": {
+						"x": 509,
+						"y": 1698,
+						"w": 141,
+						"h": 47
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "bb_EXPORT_main_menu_btn_spinicon_dimmed_x=469_y=662_w=70_h=80.png",
+					"region": {
+						"x": 1013,
+						"y": 1567,
+						"w": 70,
+						"h": 80
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "bb_EXPORT_main_menu_btn_spin_on_x=448_y=651_w=110_h=104.png",
+					"region": {
+						"x": 1344,
+						"y": 1673,
+						"w": 110,
+						"h": 104
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "bb_EXPORT_main_menu_btn_spinicon_on_x=469_y=662_w=70_h=80.png",
+					"region": {
+						"x": 1456,
+						"y": 1673,
+						"w": 70,
+						"h": 80
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "bb_EXPORT_settings_soundon_on_x=449_y=288_w=61_h=53.png",
+					"region": {
+						"x": 940,
+						"y": 1645,
+						"w": 61,
+						"h": 53
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "bb_EXPORT_main_menu_btn_info_dimmed_x=868_y=680_w=60_h=61.png",
+					"region": {
+						"x": 652,
+						"y": 1690,
+						"w": 60,
+						"h": 61
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "bb_EXPORT_main_menu_btn_info_down_x=868_y=680_w=60_h=61.png",
+					"region": {
+						"x": 714,
+						"y": 1690,
+						"w": 60,
+						"h": 61
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "bb_EXPORT_main_menu_btn_info_on_x=868_y=680_w=60_h=61.png",
+					"region": {
+						"x": 1483,
+						"y": 1269,
+						"w": 60,
+						"h": 61
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "bb_EXPORT_main_menu_btn_settings_dimmed_x=91_y=680_w=60_h=60.png",
+					"region": {
+						"x": 1003,
+						"y": 1649,
+						"w": 60,
+						"h": 60
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "bb_EXPORT_main_menu_btn_settings_down_x=91_y=680_w=60_h=60.png",
+					"region": {
+						"x": 776,
+						"y": 1694,
+						"w": 60,
+						"h": 60
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "bb_EXPORT_main_menu_btn_settings_on_x=91_y=680_w=60_h=60.png",
+					"region": {
+						"x": 838,
+						"y": 1694,
+						"w": 60,
+						"h": 60
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "bb_EXPORT_settings_auto_next_off_x=555_y=395_w=24_h=38.png",
+					"region": {
+						"x": 1545,
+						"y": 661,
+						"w": 24,
+						"h": 38
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "bb_EXPORT_settings_auto_prev_off_x=450_y=395_w=24_h=38.png",
+					"region": {
+						"x": 1545,
+						"y": 701,
+						"w": 24,
+						"h": 38
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "bb_EXPORT_settings_auto_next_on_x=552_y=392_w=30_h=44.png",
+					"region": {
+						"x": 1528,
+						"y": 1673,
+						"w": 30,
+						"h": 44
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "bb_EXPORT_settings_auto_prev_off_x=447_y=392_w=30_h=44.png",
+					"region": {
+						"x": 900,
+						"y": 1694,
+						"w": 30,
+						"h": 44
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "bb_EXPORT_settings_soundoff_on_x=523_y=291_w=55_h=47.png",
+					"region": {
+						"x": 932,
+						"y": 1700,
+						"w": 55,
+						"h": 47
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "bb_EXPORT_settings_soundon_off_x=452_y=291_w=55_h=47.png",
+					"region": {
+						"x": 989,
+						"y": 1711,
+						"w": 55,
+						"h": 47
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "bb_EXPORT_main_menu_btn_spinstopicon_dimmed_x=480_y=679_w=48_h=48.png",
+					"region": {
+						"x": 1046,
+						"y": 1711,
+						"w": 48,
+						"h": 48
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "bb_EXPORT_main_reel_frame_herradura_x=171_y=32_w=51_h=57.png",
+					"region": {
+						"x": 1096,
+						"y": 1684,
+						"w": 51,
+						"h": 57
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "bb_EXPORT_main_menu_btn_spinstopicon_on_x=480_y=679_w=48_h=48.png",
+					"region": {
+						"x": 1149,
+						"y": 1684,
+						"w": 48,
+						"h": 48
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "bb_EXPORT_settings_soundoff_off_x=526_y=294_w=49_h=41.png",
+					"region": {
+						"x": 1199,
+						"y": 1684,
+						"w": 49,
+						"h": 41
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "bb_EXPORT_main_menu_btn_betdown_dimmed_x=663_y=676_w=29_h=27.png",
+					"region": {
+						"x": 627,
+						"y": 1307,
+						"w": 29,
+						"h": 27
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "bb_EXPORT_main_menu_btn_betdown_down_x=663_y=676_w=29_h=27.png",
+					"region": {
+						"x": 509,
+						"y": 1747,
+						"w": 29,
+						"h": 27
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "bb_EXPORT_main_menu_btn_betdown_on_x=663_y=676_w=29_h=27.png",
+					"region": {
+						"x": 1313,
+						"y": 1314,
+						"w": 29,
+						"h": 27
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "bb_EXPORT_main_menu_btn_betup_dimmed_x=829_y=676_w=29_h=27.png",
+					"region": {
+						"x": 1528,
+						"y": 1719,
+						"w": 29,
+						"h": 27
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "bb_EXPORT_main_menu_btn_betup_down_x=829_y=676_w=29_h=27.png",
+					"region": {
+						"x": 1250,
+						"y": 1684,
+						"w": 29,
+						"h": 27
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "bb_EXPORT_main_menu_btn_betup_on_x=829_y=676_w=29_h=27.png",
+					"region": {
+						"x": 658,
+						"y": 1307,
+						"w": 29,
+						"h": 27
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "bb_EXPORT_main_menu_btn_autostop_dimmed_x=403_y=698_w=18_h=18.png",
+					"region": {
+						"x": 1456,
+						"y": 1755,
+						"w": 18,
+						"h": 18
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "bb_EXPORT_main_menu_btn_autostop_on_x=403_y=698_w=18_h=18.png",
+					"region": {
+						"x": 1545,
+						"y": 741,
+						"w": 18,
+						"h": 18
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "1.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:8202adb9a463c3fda94ef96deeecfd90:36ae51a9711e779984ad8b49811586ee:aaf3b3bb8b9a1d3e562204b4a449ffc5$"
+	}
+}

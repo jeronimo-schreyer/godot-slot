@@ -1,0 +1,378 @@
+{
+	"textures": [
+		{
+			"image": "atlassym2.png",
+			"size": {
+				"w": 255,
+				"h": 1462
+			},
+			"sprites": [
+				{
+					"filename": "sym_badguy.png",
+					"region": {
+						"x": 1,
+						"y": 1,
+						"w": 146,
+						"h": 136
+					},
+					"margin": {
+						"x": 0,
+						"y": 11,
+						"w": 4,
+						"h": 14
+					}
+				},
+				{
+					"filename": "sym_k_b.png",
+					"region": {
+						"x": 149,
+						"y": 1,
+						"w": 84,
+						"h": 103
+					},
+					"margin": {
+						"x": 33,
+						"y": 23,
+						"w": 66,
+						"h": 47
+					}
+				},
+				{
+					"filename": "sym_k.png",
+					"region": {
+						"x": 149,
+						"y": 106,
+						"w": 84,
+						"h": 94
+					},
+					"margin": {
+						"x": 33,
+						"y": 28,
+						"w": 66,
+						"h": 56
+					}
+				},
+				{
+					"filename": "sym_badguy_b.png",
+					"region": {
+						"x": 1,
+						"y": 139,
+						"w": 145,
+						"h": 143
+					},
+					"margin": {
+						"x": 0,
+						"y": 7,
+						"w": 5,
+						"h": 7
+					}
+				},
+				{
+					"filename": "sym_a_b.png",
+					"region": {
+						"x": 148,
+						"y": 202,
+						"w": 83,
+						"h": 102
+					},
+					"margin": {
+						"x": 34,
+						"y": 24,
+						"w": 67,
+						"h": 48
+					}
+				},
+				{
+					"filename": "sym_sherif_b.png",
+					"region": {
+						"x": 1,
+						"y": 284,
+						"w": 141,
+						"h": 150
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 9,
+						"h": 0
+					}
+				},
+				{
+					"filename": "sym_a.png",
+					"region": {
+						"x": 144,
+						"y": 306,
+						"w": 83,
+						"h": 93
+					},
+					"margin": {
+						"x": 34,
+						"y": 29,
+						"w": 67,
+						"h": 57
+					}
+				},
+				{
+					"filename": "sym_q_b.png",
+					"region": {
+						"x": 144,
+						"y": 401,
+						"w": 81,
+						"h": 103
+					},
+					"margin": {
+						"x": 35,
+						"y": 23,
+						"w": 69,
+						"h": 47
+					}
+				},
+				{
+					"filename": "sym_sherif.png",
+					"region": {
+						"x": 1,
+						"y": 436,
+						"w": 141,
+						"h": 143
+					},
+					"margin": {
+						"x": 0,
+						"y": 4,
+						"w": 9,
+						"h": 7
+					}
+				},
+				{
+					"filename": "sym_q.png",
+					"region": {
+						"x": 144,
+						"y": 506,
+						"w": 81,
+						"h": 94
+					},
+					"margin": {
+						"x": 35,
+						"y": 28,
+						"w": 69,
+						"h": 56
+					}
+				},
+				{
+					"filename": "sym_bonus_b.png",
+					"region": {
+						"x": 1,
+						"y": 581,
+						"w": 127,
+						"h": 132
+					},
+					"margin": {
+						"x": 14,
+						"y": 18,
+						"w": 23,
+						"h": 18
+					}
+				},
+				{
+					"filename": "sym_girl_b.png",
+					"region": {
+						"x": 130,
+						"y": 602,
+						"w": 124,
+						"h": 150
+					},
+					"margin": {
+						"x": 16,
+						"y": 0,
+						"w": 26,
+						"h": 0
+					}
+				},
+				{
+					"filename": "sym_cards_b.png",
+					"region": {
+						"x": 1,
+						"y": 715,
+						"w": 127,
+						"h": 132
+					},
+					"margin": {
+						"x": 14,
+						"y": 18,
+						"w": 23,
+						"h": 18
+					}
+				},
+				{
+					"filename": "sym_girl.png",
+					"region": {
+						"x": 130,
+						"y": 754,
+						"w": 124,
+						"h": 147
+					},
+					"margin": {
+						"x": 16,
+						"y": 0,
+						"w": 26,
+						"h": 3
+					}
+				},
+				{
+					"filename": "sym_placa_b.png",
+					"region": {
+						"x": 1,
+						"y": 849,
+						"w": 127,
+						"h": 132
+					},
+					"margin": {
+						"x": 14,
+						"y": 18,
+						"w": 23,
+						"h": 18
+					}
+				},
+				{
+					"filename": "sym_10_b.png",
+					"region": {
+						"x": 130,
+						"y": 903,
+						"w": 122,
+						"h": 104
+					},
+					"margin": {
+						"x": 14,
+						"y": 23,
+						"w": 28,
+						"h": 46
+					}
+				},
+				{
+					"filename": "sym_bonus.png",
+					"region": {
+						"x": 1,
+						"y": 983,
+						"w": 127,
+						"h": 126
+					},
+					"margin": {
+						"x": 14,
+						"y": 23,
+						"w": 23,
+						"h": 24
+					}
+				},
+				{
+					"filename": "sym_10.png",
+					"region": {
+						"x": 130,
+						"y": 1009,
+						"w": 122,
+						"h": 95
+					},
+					"margin": {
+						"x": 14,
+						"y": 28,
+						"w": 28,
+						"h": 55
+					}
+				},
+				{
+					"filename": "sym_9.png",
+					"region": {
+						"x": 130,
+						"y": 1106,
+						"w": 78,
+						"h": 94
+					},
+					"margin": {
+						"x": 36,
+						"y": 28,
+						"w": 72,
+						"h": 56
+					}
+				},
+				{
+					"filename": "sym_cards.png",
+					"region": {
+						"x": 1,
+						"y": 1111,
+						"w": 127,
+						"h": 126
+					},
+					"margin": {
+						"x": 14,
+						"y": 23,
+						"w": 23,
+						"h": 24
+					}
+				},
+				{
+					"filename": "sym_9_b.png",
+					"region": {
+						"x": 130,
+						"y": 1202,
+						"w": 77,
+						"h": 103
+					},
+					"margin": {
+						"x": 37,
+						"y": 23,
+						"w": 73,
+						"h": 47
+					}
+				},
+				{
+					"filename": "sym_placa.png",
+					"region": {
+						"x": 1,
+						"y": 1239,
+						"w": 127,
+						"h": 126
+					},
+					"margin": {
+						"x": 14,
+						"y": 23,
+						"w": 23,
+						"h": 24
+					}
+				},
+				{
+					"filename": "sym_j_b.png",
+					"region": {
+						"x": 130,
+						"y": 1307,
+						"w": 66,
+						"h": 103
+					},
+					"margin": {
+						"x": 42,
+						"y": 23,
+						"w": 84,
+						"h": 47
+					}
+				},
+				{
+					"filename": "sym_j.png",
+					"region": {
+						"x": 1,
+						"y": 1367,
+						"w": 66,
+						"h": 94
+					},
+					"margin": {
+						"x": 42,
+						"y": 28,
+						"w": 84,
+						"h": 56
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "1.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:1de2ce8395aadc4767929c8e14b1ec98:a52de46347de84d1fe3d7745cddbc21a:bf112806537747324790e6e7ed862dd0$"
+	}
+}
