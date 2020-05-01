@@ -1,4 +1,4 @@
-[gd_scene load_steps=31 format=2]
+[gd_scene load_steps=32 format=2]
 
 [ext_resource path="res://core/reels/2DReels.tscn" type="PackedScene" id=1]
 [ext_resource path="res://arte/atlas.sprites/bb_EXPORT_main_menu_btn_betup_on_x=829_y=676_w=29_h=27.tres" type="Texture" id=2]
@@ -7,6 +7,7 @@
 [ext_resource path="res://arte/atlas.sprites/bb_EXPORT_main_menu_btn_settings_on_x=91_y=680_w=60_h=60.tres" type="Texture" id=5]
 [ext_resource path="res://arte/atlas.sprites/bb_EXPORT_main_menu_base_x=56_y=644_w=907_h=124.tres" type="Texture" id=6]
 [ext_resource path="res://arte/atlas.sprites/bb_EXPORT_fs_reel_frame_x=114_y=30_w=790_h=638.tres" type="Texture" id=7]
+[ext_resource path="res://arte/fonts/roboto_black.res" type="DynamicFont" id=8]
 [ext_resource path="res://arte/atlas.sprites/bb_EXPORT_main_menu_btn_double_on_x=164_y=706_w=168_h=43.tres" type="Texture" id=9]
 [ext_resource path="res://arte/atlas.sprites/bb_EXPORT_main_menu_btn_auto_on_x=357_y=683_w=141_h=47.tres" type="Texture" id=10]
 [ext_resource path="res://arte/atlas.sprites/bb_EXPORT_main_menu_btn_betdown_on_x=663_y=676_w=29_h=27.tres" type="Texture" id=11]
@@ -94,6 +95,9 @@ margin_left = -453.5
 margin_top = -124.0
 margin_right = 453.5
 texture = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="auto" type="TextureButton" parent="main_menu"]
 margin_left = 298.5
@@ -191,4 +195,34 @@ margin_bottom = -12.0
 texture = ExtResource( 30 )
 expand = true
 stretch_mode = 6
+
+[node name="total win" type="Label" parent="main_menu"]
+margin_left = 110.0
+margin_top = 35.0
+margin_right = 270.0
+margin_bottom = 59.0
+custom_fonts/font = ExtResource( 8 )
+text = "$000,000.00"
+align = 1
+valign = 1
+
+[node name="total bet" type="Label" parent="main_menu"]
+margin_left = 620.0
+margin_top = 35.0
+margin_right = 780.0
+margin_bottom = 59.0
+custom_fonts/font = ExtResource( 8 )
+text = "$000,000.00"
+align = 1
+valign = 1
+
+[node name="balance" type="Label" parent="main_menu"]
+margin_left = 620.0
+margin_top = 80.0
+margin_right = 780.0
+margin_bottom = 104.0
+custom_fonts/font = ExtResource( 8 )
+text = "$000,000.00"
+align = 1
+valign = 1
 [connection signal="pressed" from="main_menu/spin" to="." method="_on_spin_pressed"]

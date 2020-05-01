@@ -4,8 +4,8 @@ var current
 var next
 
 onready var states = {
-	"freespin": preload("res://estados/freespin.tscn"),
 	"main" : preload("res://estados/main.tscn"),
+	"freespin": preload("res://estados/freespin.tscn"),
 	"bonus" : preload("res://estados/bonus.tscn"),
 	"doubleup" : preload("res://estados/double up.tscn"),
 }
@@ -46,4 +46,4 @@ func http_finished(request):
 
 
 func http_error(responseCode):
-	print("HTTP Error, response code:" + responseCode)
+	print("HTTP Error, response code: %i" % responseCode)

@@ -81,3 +81,8 @@ margin_bottom = 600.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 strip = "c,10,g,a,s,10,g,a,k,9,p,a,s,c,b,10,b,a,j,k,c,b,q,k,s,a,g,j,k,p,b,c,b,a,10,c,k,a,k,10,a,s,q,p,g,10,b,c,9,g,j,j,k,g,k,j,c,c,q,b"
+[connection signal="reel_stop" from="Reel" to="." method="_on_reel_stop"]
+[connection signal="reel_stop" from="Reel2" to="." method="_on_reel_stop"]
+[connection signal="reel_stop" from="Reel3" to="." method="_on_reel_stop"]
+[connection signal="reel_stop" from="Reel4" to="." method="_on_reel_stop"]
+[connection signal="reel_stop" from="Reel5" to="." method="_on_reel_stop"]

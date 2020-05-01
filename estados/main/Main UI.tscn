@@ -1,4 +1,4 @@
-[gd_scene load_steps=32 format=2]
+[gd_scene load_steps=34 format=2]
 
 [ext_resource path="res://core/reels/2DReels.tscn" type="PackedScene" id=1]
 [ext_resource path="res://arte/atlas.sprites/bb_EXPORT_main_menu_btn_betup_on_x=829_y=676_w=29_h=27.tres" type="Texture" id=2]
@@ -31,6 +31,8 @@
 [ext_resource path="res://arte/atlas.sprites/bb_EXPORT_main_menu_btn_settings_dimmed_x=91_y=680_w=60_h=60.tres" type="Texture" id=29]
 [ext_resource path="res://arte/atlas.sprites/bb_EXPORT_main_menu_btn_spinicon_on_x=469_y=662_w=70_h=80.tres" type="Texture" id=30]
 [ext_resource path="res://estados/main/Main UI.gd" type="Script" id=31]
+[ext_resource path="res://arte/atlas.sprites/bb_EXPORT_main_menu_btn_spin_dimmed_x=448_y=651_w=110_h=104.tres" type="Texture" id=33]
+[ext_resource path="res://ui/price_label.res" type="PackedScene" id=35]
 
 [node name="Main UI" type="Control"]
 anchor_right = 1.0
@@ -99,6 +101,9 @@ margin_left = -453.5
 margin_top = -124.0
 margin_right = 453.5
 texture = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="auto" type="TextureButton" parent="main_menu"]
 margin_left = 298.5
@@ -117,6 +122,9 @@ margin_bottom = 59.0
 texture_normal = ExtResource( 11 )
 texture_pressed = ExtResource( 28 )
 texture_disabled = ExtResource( 19 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="bet up" type="TextureButton" parent="main_menu"]
 margin_left = 770.5
@@ -173,7 +181,7 @@ margin_right = 501.5
 margin_bottom = 111.0
 texture_normal = ExtResource( 14 )
 texture_pressed = ExtResource( 24 )
-texture_disabled = ExtResource( 15 )
+texture_disabled = ExtResource( 33 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -189,14 +197,34 @@ texture = ExtResource( 30 )
 expand = true
 stretch_mode = 6
 
+[node name="total win" parent="main_menu" instance=ExtResource( 35 )]
+margin_left = 110.0
+margin_right = 270.0
+
+[node name="total bet" parent="main_menu" instance=ExtResource( 35 )]
+margin_left = 620.0
+margin_right = 780.0
+
+[node name="balance" parent="main_menu" instance=ExtResource( 35 )]
+margin_left = 620.0
+margin_top = 80.0
+margin_right = 780.0
+margin_bottom = 104.0
+
 [node name="jackpot" type="TextureRect" parent="."]
 anchor_left = 0.786
 anchor_right = 1.0
 anchor_bottom = 0.117
-margin_left = 0.135986
+margin_left = -20.864
+margin_right = -21.0
 margin_bottom = 0.144104
 texture = ExtResource( 7 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="value" parent="jackpot" instance=ExtResource( 35 )]
+rect_rotation = 3.0
+value = 200000
+[connection signal="all_reels_stopped" from="reel/Reels" to="." method="_on_all_reels_stopped"]
 [connection signal="pressed" from="main_menu/spin" to="." method="_on_spin_pressed"]

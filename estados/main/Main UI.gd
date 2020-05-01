@@ -11,11 +11,30 @@ signal spin
 func _ready():
 	pass # Replace with function body.
 
-func updateJackpotValues(result):
-	#$"VBoxContainer/Top Panel/Jackpot 1".updateValue(result.JACKPOT1)
-	#$"VBoxContainer/Top Panel/Jackpot 2".updateValue(result.JACKPOT2)
-	print(result.JACKPOT)
+func update_jackpot(result):
+	$jackpot/value.update_value(result.JACKPOT)
 
+func update_balance(result):
+	$main_menu/balance.update_value(result.BALANCE)
+
+func update_win(result):
+	$"main_menu/total win".update_value(result.TOTALPAY)
+
+func set_ui_enable(enabled):
+	$"main_menu/bet down".disabled = !enabled
+	$"main_menu/bet up".disabled = !enabled
+	$"main_menu/double up".disabled = !enabled
+	$main_menu/auto.disabled = !enabled
+	$main_menu/info.disabled = !enabled
+	$main_menu/settings.disabled = !enabled
+	$main_menu/spin.disabled = !enabled
+	$main_menu/turbo.disabled = !enabled
+	
 
 func _on_spin_pressed():
+	set_ui_enable(false)
 	emit_signal("spin")
+
+
+func _on_all_reels_stopped():
+	set_ui_enable(true)

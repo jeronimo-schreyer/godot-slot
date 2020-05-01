@@ -6,6 +6,7 @@ export (String) var strip # symbols separated by comma (,)
 var strip_symbols = []
 var symbol_nodes = []
 var strip_index = 0 # current place in the strip
+var stop_point = -1
 
 onready var stateMachine = $AnimationTree.get("parameters/playback")
 
@@ -27,9 +28,13 @@ func update_symbols(blurred, update_counter = 1):
 		var sym = symbol_nodes[i]
 		var sym_index = strip_index + symbol_nodes.size() - i
 		sym.update_symbol("sym_" + strip_symbols[sym_index], blurred)
+	
+	if strip_index == stop_point:
+		stop_point = -1
+		stateMachine.travel(STATE_IDLE)
 
 func startSpin():
 	stateMachine.travel(STATE_SPINNING)
 
-func stopSpin():
-	stateMachine.travel(STATE_IDLE)
+func stopSpin(stop_point):
+	self.stop_point = stop_point

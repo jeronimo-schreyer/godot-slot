@@ -17,17 +17,19 @@ func play():
 	$"Main UI/reel/Reels".startSpin()
 	
 	# send request
-	#var req = yield(http.send("spin"), "finished")
+	var req = yield(http.send("spin"), "finished")
 	#print(req.result.TOTALPAY)
 	
 	# stop reels on stop points
-	#$Environment/Reel/Viewport/Reels.stopSpin(req.result.STOP)
+	yield($"Main UI/reel/Reels".stopSpin(req.result.STOP), "all_reels_stopped")
 	
 	# show ramp
 	
 	# show winning combinations
 	
-	# update jackpot values
-	#$UI.updateJackpotValues(req.result)
+	# update ui values
+	$"Main UI".update_jackpot(req.result)
+	$"Main UI".update_balance(req.result)
+	$"Main UI".update_win(req.result)
 	
 	#fsm.exit_state()

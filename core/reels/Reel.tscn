@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=18 format=2]
 
 [ext_resource path="res://core/Symbol.tscn" type="PackedScene" id=1]
 [ext_resource path="res://arte/atlassym2.sprites/sym_j.tres" type="Texture" id=2]
@@ -10,22 +10,41 @@ animation = "Idle"
 [sub_resource type="AnimationNodeAnimation" id=2]
 animation = "Spinning"
 
-[sub_resource type="AnimationNodeStateMachineTransition" id=3]
+[sub_resource type="AnimationNodeAnimation" id=3]
+animation = "Start Spin"
 
-[sub_resource type="AnimationNodeStateMachineTransition" id=4]
+[sub_resource type="AnimationNodeAnimation" id=4]
+animation = "Stop Spin"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=5]
 switch_mode = 2
 
-[sub_resource type="AnimationNodeStateMachine" id=5]
+[sub_resource type="AnimationNodeStateMachineTransition" id=6]
+switch_mode = 2
+auto_advance = true
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=7]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=8]
+switch_mode = 2
+auto_advance = true
+
+[sub_resource type="AnimationNodeStateMachine" id=9]
 states/Idle/node = SubResource( 1 )
 states/Idle/position = Vector2( 328, 109 )
 states/Spinning/node = SubResource( 2 )
 states/Spinning/position = Vector2( 573, 109 )
-transitions = [ "Idle", "Spinning", SubResource( 3 ), "Spinning", "Idle", SubResource( 4 ) ]
+"states/Start Spin/node" = SubResource( 3 )
+"states/Start Spin/position" = Vector2( 439, 16 )
+"states/Stop Spin/node" = SubResource( 4 )
+"states/Stop Spin/position" = Vector2( 439, 200 )
+transitions = [ "Spinning", "Stop Spin", SubResource( 5 ), "Stop Spin", "Idle", SubResource( 6 ), "Idle", "Start Spin", SubResource( 7 ), "Start Spin", "Spinning", SubResource( 8 ) ]
 start_node = "Idle"
+graph_offset = Vector2( -23, -130 )
 
-[sub_resource type="AnimationNodeStateMachinePlayback" id=6]
+[sub_resource type="AnimationNodeStateMachinePlayback" id=10]
 
-[sub_resource type="Animation" id=7]
+[sub_resource type="Animation" id=11]
 length = 0.001
 tracks/0/type = "value"
 tracks/0/path = NodePath("VBoxContainer:rect_position")
@@ -40,8 +59,10 @@ tracks/0/keys = {
 "values": [ Vector2( 0, -150 ) ]
 }
 
-[sub_resource type="Animation" id=8]
+[sub_resource type="Animation" id=12]
+length = 0.11
 loop = true
+step = 0.001
 tracks/0/type = "value"
 tracks/0/path = NodePath("VBoxContainer:rect_position")
 tracks/0/interp = 1
@@ -49,10 +70,10 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 1 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PoolRealArray( 0, 0.1, 0.101 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
-"values": [ Vector2( 0, -150 ), Vector2( 0, 0 ) ]
+"values": [ Vector2( 0, -150 ), Vector2( 0, 0 ), Vector2( 0, -150 ) ]
 }
 tracks/1/type = "method"
 tracks/1/path = NodePath(".")
@@ -61,11 +82,71 @@ tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 1 ),
+"times": PoolRealArray( 0.101 ),
 "transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [ true, 1 ],
+"method": "update_symbols"
+} ]
+}
+
+[sub_resource type="Animation" id=13]
+resource_name = "Start Spin"
+length = 0.72
+step = 0.001
+tracks/0/type = "bezier"
+tracks/0/path = NodePath("VBoxContainer:rect_position:y")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"points": PoolRealArray( -150, -0.512743, 293.034, 0.512743, -293.034, 0, 0, 0.410675, 0, -0.410675, -150, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.7, 0.701 )
+}
+tracks/1/type = "method"
+tracks/1/path = NodePath(".")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0.701 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [ true, 1 ],
+"method": "update_symbols"
+} ]
+}
+
+[sub_resource type="Animation" id=14]
+length = 0.52
+step = 0.001
+tracks/0/type = "bezier"
+tracks/0/path = NodePath("VBoxContainer:rect_position:y")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"points": PoolRealArray( -150, 0, -0.877625, 0, 0.877625, 0, -0.290204, 166.098, 0.290204, -166.098, -150, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.499, 0.5 )
+}
+tracks/1/type = "method"
+tracks/1/path = NodePath(".")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0.5, 0.519 ),
+"transitions": PoolRealArray( 1, 1 ),
 "values": [ {
 "args": [ false, 1 ],
 "method": "update_symbols"
+}, {
+"args": [ "reel_stop" ],
+"method": "emit_signal"
 } ]
 }
 
@@ -85,14 +166,16 @@ __meta__ = {
 }
 
 [node name="AnimationTree" type="AnimationTree" parent="."]
-tree_root = SubResource( 5 )
+tree_root = SubResource( 9 )
 anim_player = NodePath("../AnimationPlayer")
 active = true
-parameters/playback = SubResource( 6 )
+parameters/playback = SubResource( 10 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-anims/Idle = SubResource( 7 )
-anims/Spinning = SubResource( 8 )
+anims/Idle = SubResource( 11 )
+anims/Spinning = SubResource( 12 )
+"anims/Start Spin" = SubResource( 13 )
+"anims/Stop Spin" = SubResource( 14 )
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 anchor_left = 0.5
