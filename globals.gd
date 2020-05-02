@@ -1,5 +1,6 @@
 extends Node
 
+# formats a number with thousand and decimal characters
 static func price_format(value, thousand, decimal = ""):
 	var number = str("%-3.2f" % value).replace(".", decimal)
 	var last_position = number.find(decimal)

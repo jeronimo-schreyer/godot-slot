@@ -35,6 +35,5 @@ func _on_spin_pressed():
 	set_ui_enable(false)
 	emit_signal("spin")
 
-
 func _on_all_reels_stopped():
 	set_ui_enable(true)

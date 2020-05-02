@@ -13,6 +13,8 @@ func _ready():
 func startSpin():
 	for reel in reels:
 		reel.startSpin()
+		
+		# dont start them all at once
 		yield(get_tree().create_timer(.12), "timeout")
 
 func stopSpin(stop_points):

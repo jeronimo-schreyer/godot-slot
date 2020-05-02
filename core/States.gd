@@ -12,6 +12,7 @@ onready var states = {
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	# set window minium size
 	OS.min_window_size = Vector2(
 		ProjectSettings.get("display/window/size/min_width"),
 		ProjectSettings.get("display/window/size/min_height")
