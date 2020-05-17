@@ -2,10 +2,13 @@ extends Node
 
 var current
 var next
+var node
+
+var last_request
 
 onready var states = {
-	"main" : preload("res://estados/main.tscn"),
-	"freespin": preload("res://estados/freespin.tscn"),
+	"Spin" : preload("res://estados/main.tscn"),
+	"Freespin": preload("res://estados/freespin.tscn"),
 	"bonus" : preload("res://estados/bonus.tscn"),
 	"doubleup" : preload("res://estados/double up.tscn"),
 }
@@ -19,31 +22,32 @@ func _ready():
 	)
 	
 	if states.size() > 0:
-		next = states[states.keys()[0]]
+		next = states.keys()[0]
 		enter_state()
 
 func enter_state():
-	if current != null:
-		current.queue_free()
+	if node != null:
+		node.queue_free()
 	
-	current = next.instance()
-	current.fsm = self
-	current.enter()
-	add_child(current)
+	node = states[next].instance()
+	current = next
+	node.fsm = self
+	node.call_deferred("enter", last_request)
+	add_child(node)
 
 func switch_state(state):
-	next = states[state]
+	next = state
 
 func exit_state():
 	if next != null:
-		enter_state()
-
-func send_request():
-	pass
+		if current == next:
+			node.call_deferred("enter", last_request)
+		else:
+			enter_state()
 
 func http_finished(request):
-	pass
-	#switch_state(request.result.NEXT_STATE)
+	last_request = request
+	switch_state(request.result.NEXT_STATE)
 
 
 func http_error(responseCode):

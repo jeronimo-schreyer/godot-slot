@@ -1,0 +1,37 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://arte/fonts/jackpot.fnt" type="BitmapFont" id=1]
+[ext_resource path="res://arte/atlas.sprites/bb_EXPORT_main_jackpot_base_x=798_y=0_w=219_h=90.tres" type="Texture" id=3]
+[ext_resource path="res://ui/price_label.res" type="PackedScene" id=4]
+
+[node name="jackpot" type="TextureRect"]
+anchor_left = 0.786
+anchor_right = 1.0
+anchor_bottom = 0.117
+margin_left = -20.864
+margin_right = -21.0
+margin_bottom = 0.144104
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="value" parent="." instance=ExtResource( 4 )]
+rect_rotation = 3.0
+value = 200000
+
+[node name="Label" type="Label" parent="."]
+margin_left = 40.0
+margin_top = 12.0
+margin_right = 200.0
+margin_bottom = 41.0
+rect_rotation = 3.0
+rect_scale = Vector2( 0.9, 0.9 )
+custom_fonts/font = ExtResource( 1 )
+text = "jackpot win"
+align = 1
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}

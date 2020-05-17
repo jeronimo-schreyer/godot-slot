@@ -1,4 +1,4 @@
-[gd_scene load_steps=32 format=2]
+[gd_scene load_steps=33 format=2]
 
 [ext_resource path="res://core/reels/2DReels.tscn" type="PackedScene" id=1]
 [ext_resource path="res://arte/atlas.sprites/bb_EXPORT_main_menu_btn_betup_on_x=829_y=676_w=29_h=27.tres" type="Texture" id=2]
@@ -7,20 +7,18 @@
 [ext_resource path="res://arte/atlas.sprites/bb_EXPORT_main_menu_btn_settings_on_x=91_y=680_w=60_h=60.tres" type="Texture" id=5]
 [ext_resource path="res://arte/atlas.sprites/bb_EXPORT_main_menu_base_x=56_y=644_w=907_h=124.tres" type="Texture" id=6]
 [ext_resource path="res://arte/atlas.sprites/bb_EXPORT_fs_reel_frame_x=114_y=30_w=790_h=638.tres" type="Texture" id=7]
-[ext_resource path="res://arte/fonts/roboto_black.res" type="DynamicFont" id=8]
 [ext_resource path="res://arte/atlas.sprites/bb_EXPORT_main_menu_btn_double_on_x=164_y=706_w=168_h=43.tres" type="Texture" id=9]
-[ext_resource path="res://arte/atlas.sprites/bb_EXPORT_main_menu_btn_auto_on_x=357_y=683_w=141_h=47.tres" type="Texture" id=10]
+[ext_resource path="res://arte/fonts/RobotoSlab-Bold.ttf" type="DynamicFontData" id=10]
 [ext_resource path="res://arte/atlas.sprites/bb_EXPORT_main_menu_btn_betdown_on_x=663_y=676_w=29_h=27.tres" type="Texture" id=11]
 [ext_resource path="res://arte/atlas.sprites/bb_EXPORT_fs_logo_x=322_y=2_w=384_h=76.tres" type="Texture" id=12]
 [ext_resource path="res://arte/atlas.sprites/bb_EXPORT_main_menu_btn_turbo_on_x=514_y=683_w=141_h=47.tres" type="Texture" id=13]
 [ext_resource path="res://arte/atlas.sprites/bb_EXPORT_main_menu_btn_spin_on_x=448_y=651_w=110_h=104.tres" type="Texture" id=14]
-[ext_resource path="res://arte/atlas.sprites/bb_EXPORT_main_menu_btn_auto_dimmed_x=357_y=683_w=141_h=47.tres" type="Texture" id=15]
+[ext_resource path="res://estados/freespin/Freespin UI.gd" type="Script" id=15]
 [ext_resource path="res://arte/atlas.sprites/bb_EXPORT_main_menu_btn_info_down_x=868_y=680_w=60_h=61.tres" type="Texture" id=16]
 [ext_resource path="res://arte/atlas.sprites/bb_EXPORT_main_menu_btn_betup_down_x=829_y=676_w=29_h=27.tres" type="Texture" id=17]
 [ext_resource path="res://arte/atlas.sprites/bb_EXPORT_main_menu_btn_dpuble_down_x=164_y=706_w=168_h=43.tres" type="Texture" id=18]
 [ext_resource path="res://arte/atlas.sprites/bb_EXPORT_main_menu_btn_betdown_dimmed_x=663_y=676_w=29_h=27.tres" type="Texture" id=19]
 [ext_resource path="res://arte/atlas.sprites/bb_EXPORT_main_menu_btn_turbo_down_x=514_y=683_w=141_h=47.tres" type="Texture" id=20]
-[ext_resource path="res://arte/atlas.sprites/bb_EXPORT_main_menu_btn_auto_down_x=357_y=683_w=141_h=47.tres" type="Texture" id=21]
 [ext_resource path="res://arte/atlas.sprites/bb_EXPORT_main_menu_btn_betup_dimmed_x=829_y=676_w=29_h=27.tres" type="Texture" id=22]
 [ext_resource path="res://arte/atlas.sprites/bb_EXPORT_main_menu_btn_double_dimmed_x=164_y=706_w=168_h=43.tres" type="Texture" id=23]
 [ext_resource path="res://arte/atlas.sprites/bb_EXPORT_main_menu_btn_spin_down_x=448_y=651_w=110_h=104.tres" type="Texture" id=24]
@@ -31,10 +29,20 @@
 [ext_resource path="res://arte/atlas.sprites/bb_EXPORT_main_menu_btn_settings_dimmed_x=91_y=680_w=60_h=60.tres" type="Texture" id=29]
 [ext_resource path="res://arte/atlas.sprites/bb_EXPORT_main_menu_btn_spinicon_dimmed_x=469_y=662_w=70_h=80.tres" type="Texture" id=30]
 [ext_resource path="res://arte/atlas.sprites/bb_EXPORT_main_menu_btn_spin_dimmed_x=448_y=651_w=110_h=104.tres" type="Texture" id=32]
+[ext_resource path="res://ui/menu_button.tscn" type="PackedScene" id=33]
+[ext_resource path="res://ui/price_label.res" type="PackedScene" id=34]
+
+[sub_resource type="DynamicFont" id=1]
+size = 24
+outline_size = 2
+outline_color = Color( 1, 1, 1, 0.705882 )
+use_filter = true
+font_data = ExtResource( 10 )
 
 [node name="Freespin UI" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+script = ExtResource( 15 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -99,15 +107,18 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="auto" type="TextureButton" parent="main_menu"]
+[node name="auto" parent="main_menu" instance=ExtResource( 33 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
 margin_left = 298.5
 margin_top = 39.0
 margin_right = 439.5
 margin_bottom = 86.0
 disabled = true
-texture_normal = ExtResource( 10 )
-texture_pressed = ExtResource( 21 )
-texture_disabled = ExtResource( 15 )
+caption = "auto"
+align = "Left"
 
 [node name="bet down" type="TextureButton" parent="main_menu"]
 margin_left = 604.5
@@ -129,7 +140,11 @@ texture_normal = ExtResource( 2 )
 texture_pressed = ExtResource( 17 )
 texture_disabled = ExtResource( 22 )
 
-[node name="double up" type="TextureButton" parent="main_menu"]
+[node name="double up" parent="main_menu" instance=ExtResource( 33 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
 margin_left = 105.5
 margin_top = 62.0
 margin_right = 273.5
@@ -138,9 +153,8 @@ disabled = true
 texture_normal = ExtResource( 9 )
 texture_pressed = ExtResource( 18 )
 texture_disabled = ExtResource( 23 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
+caption = "double up"
+align = "Center"
 
 [node name="info" type="TextureButton" parent="main_menu"]
 margin_left = 809.5
@@ -162,7 +176,11 @@ texture_normal = ExtResource( 5 )
 texture_pressed = ExtResource( 27 )
 texture_disabled = ExtResource( 29 )
 
-[node name="turbo" type="TextureButton" parent="main_menu"]
+[node name="turbo" parent="main_menu" instance=ExtResource( 33 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
 margin_left = 455.5
 margin_top = 39.0
 margin_right = 596.5
@@ -171,6 +189,8 @@ disabled = true
 texture_normal = ExtResource( 13 )
 texture_pressed = ExtResource( 20 )
 texture_disabled = ExtResource( 25 )
+caption = "turbo"
+align = "Right"
 
 [node name="spin" type="TextureButton" parent="main_menu"]
 margin_left = 391.5
@@ -196,33 +216,27 @@ texture = ExtResource( 30 )
 expand = true
 stretch_mode = 6
 
-[node name="total win" type="Label" parent="main_menu"]
+[node name="left" type="Label" parent="main_menu/spin"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 2.0
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0.368627, 0.513726, 0.54902, 1 )
+text = "10"
+align = 1
+valign = 1
+
+[node name="total win" parent="main_menu" instance=ExtResource( 34 )]
 margin_left = 110.0
-margin_top = 35.0
 margin_right = 270.0
-margin_bottom = 59.0
-custom_fonts/font = ExtResource( 8 )
-text = "$000,000.00"
-align = 1
-valign = 1
 
-[node name="total bet" type="Label" parent="main_menu"]
+[node name="total bet" parent="main_menu" instance=ExtResource( 34 )]
 margin_left = 620.0
-margin_top = 35.0
 margin_right = 780.0
-margin_bottom = 59.0
-custom_fonts/font = ExtResource( 8 )
-text = "$000,000.00"
-align = 1
-valign = 1
 
-[node name="balance" type="Label" parent="main_menu"]
+[node name="balance" parent="main_menu" instance=ExtResource( 34 )]
 margin_left = 620.0
 margin_top = 80.0
 margin_right = 780.0
 margin_bottom = 104.0
-custom_fonts/font = ExtResource( 8 )
-text = "$000,000.00"
-align = 1
-valign = 1
 [connection signal="pressed" from="main_menu/spin" to="." method="_on_spin_pressed"]

@@ -3,16 +3,19 @@ extends Spatial
 onready var http = get_parent().get_node("HTTPRequest")
 
 var fsm: Node
-var ramp = preload("res://core/Rampa.tscn")
+var ramp = preload("res://rampa/Rampa.tscn")
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass # Replace with function body.
 
-func enter():
+func enter(request):
 	print("Main::enter")
 
 func play():
+	
+	# disable UI
+	$"Main UI".set_ui_enable(false)
 	
 	#start reels
 	$"Main UI/reel/Reels".startSpin()
@@ -38,4 +41,7 @@ func play():
 	
 	# show winning combinations
 	
-	#fsm.exit_state()
+	# enable UI
+	$"Main UI".set_ui_enable(true)
+	
+	fsm.exit_state()

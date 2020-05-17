@@ -1,0 +1,154 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://arte/fonts/RobotoSlab-Bold.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://arte/atlas.sprites/bb_EXPORT_dialog_base_x=204_y=175_w=688_h=389.tres" type="Texture" id=2]
+[ext_resource path="res://ui/Freespin Win.gd" type="Script" id=3]
+
+[sub_resource type="DynamicFont" id=1]
+size = 36
+outline_size = 2
+outline_color = Color( 0.870588, 0.654902, 0.423529, 1 )
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 60
+outline_size = 4
+outline_color = Color( 0.141176, 0.12549, 0.145098, 1 )
+font_data = ExtResource( 1 )
+
+[sub_resource type="Animation" id=3]
+resource_name = "Show"
+length = 7.0
+tracks/0/type = "bezier"
+tracks/0/path = NodePath("dialog:rect_scale:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"points": PoolRealArray( 1e-05, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, -0.05, 0.67, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0 ),
+"times": PoolRealArray( 0, 0.5, 1.3, 6.5, 6.9 )
+}
+tracks/1/type = "bezier"
+tracks/1/path = NodePath("dialog:rect_scale:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"points": PoolRealArray( 1e-05, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, -0.05, 0.67, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0 ),
+"times": PoolRealArray( 0, 0.5, 1.3, 6.5, 6.9 )
+}
+tracks/2/type = "method"
+tracks/2/path = NodePath("Tween")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 1.3 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [  ],
+"method": "start"
+} ]
+}
+tracks/3/type = "method"
+tracks/3/path = NodePath(".")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 6.9, 7 ),
+"transitions": PoolRealArray( 1, 1 ),
+"values": [ {
+"args": [ "finished" ],
+"method": "emit_signal"
+}, {
+"args": [  ],
+"method": "queue_free"
+} ]
+}
+
+[sub_resource type="AnimationNodeAnimation" id=4]
+animation = "Show"
+
+[sub_resource type="AnimationNodeStateMachine" id=5]
+states/Show/node = SubResource( 4 )
+states/Show/position = Vector2( 363, 74 )
+start_node = "Show"
+
+[sub_resource type="AnimationNodeStateMachinePlayback" id=6]
+
+[node name="Freespin Win" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="layout" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0, 0, 0, 0.352941 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="dialog" type="TextureRect" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -308.0
+margin_top = -209.0
+margin_right = 316.0
+margin_bottom = 180.0
+rect_scale = Vector2( 1e-05, 1e-05 )
+rect_pivot_offset = Vector2( 308, 209 )
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="dialog"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="congratulations" type="Label" parent="dialog/VBoxContainer"]
+margin_top = 103.0
+margin_right = 624.0
+margin_bottom = 202.0
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0.141176, 0.12549, 0.145098, 1 )
+text = "congratulations
+you won"
+align = 1
+valign = 1
+uppercase = true
+
+[node name="prize" type="Label" parent="dialog/VBoxContainer"]
+margin_top = 206.0
+margin_right = 624.0
+margin_bottom = 286.0
+custom_fonts/font = SubResource( 2 )
+text = "$0,00"
+align = 1
+valign = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/Show = SubResource( 3 )
+
+[node name="AnimationTree" type="AnimationTree" parent="."]
+tree_root = SubResource( 5 )
+anim_player = NodePath("../AnimationPlayer")
+active = true
+parameters/playback = SubResource( 6 )
+
+[node name="Tween" type="Tween" parent="."]
