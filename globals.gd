@@ -15,3 +15,9 @@ static func price_format(value, thousand, decimal = ""):
 		i = i - 3
 	
 	return number
+
+#static func reparent_node(node, target):
+#	var source = node.get_parent()
+#	source.call_deferred("remove_child", node)
+#	target.call_deferred("add_child", node)
+#	node.call_deferred("set_owner", target)
