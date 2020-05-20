@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://estados/main/character/character.material" type="Material" id=1]
+[ext_resource path="res://estados/main/character.escn" type="PackedScene" id=2]
+
+[node name="character" instance=ExtResource( 2 )]
+
+[node name="Root" parent="." index="0"]
+transform = Transform( -0.0028132, 0.00959614, -1.56341e-09, 0, -1.62921e-09, -0.01, -0.00959614, -0.0028132, 4.58328e-10, 0, 0, 0 )
+
+[node name="SK_Character_Badguy_01" parent="Root" index="1"]
+transform = Transform( 0.422618, -0.906307, 7.9232e-08, 0.906307, 0.422618, 6.76497e-09, -3.9616e-08, 6.89495e-08, 1, -3.41976e-08, 2.98537e-07, 2.54447e-13 )
+material/0 = ExtResource( 1 )
+
+[node name="Camera" type="Camera" parent="." index="1"]
+transform = Transform( 0.998342, -0.057564, 0, 0.055273, 0.958609, 0.27931, -0.0160782, -0.278846, 0.960201, 0.25, 1.95, 1.8 )
+fov = 40.0
+size = 1.9
+near = 0.1
+far = 10.0

@@ -1,4 +1,4 @@
-[gd_scene load_steps=32 format=2]
+[gd_scene load_steps=34 format=2]
 
 [ext_resource path="res://core/reels/2DReels.tscn" type="PackedScene" id=1]
 [ext_resource path="res://arte/atlas.sprites/bb_EXPORT_main_menu_btn_betup_on_x=829_y=676_w=29_h=27.tres" type="Texture" id=2]
@@ -14,11 +14,13 @@
 [ext_resource path="res://arte/atlas.sprites/bb_EXPORT_main_logo_x=256_y=0_w=518_h=78.tres" type="Texture" id=12]
 [ext_resource path="res://arte/atlas.sprites/bb_EXPORT_main_menu_btn_turbo_on_x=514_y=683_w=141_h=47.tres" type="Texture" id=13]
 [ext_resource path="res://arte/atlas.sprites/bb_EXPORT_main_menu_btn_spin_on_x=448_y=651_w=110_h=104.tres" type="Texture" id=14]
+[ext_resource path="res://estados/main/character.tscn" type="PackedScene" id=15]
 [ext_resource path="res://arte/atlas.sprites/bb_EXPORT_main_menu_btn_info_down_x=868_y=680_w=60_h=61.tres" type="Texture" id=16]
 [ext_resource path="res://arte/atlas.sprites/bb_EXPORT_main_menu_btn_betup_down_x=829_y=676_w=29_h=27.tres" type="Texture" id=17]
 [ext_resource path="res://arte/atlas.sprites/bb_EXPORT_main_menu_btn_dpuble_down_x=164_y=706_w=168_h=43.tres" type="Texture" id=18]
 [ext_resource path="res://arte/atlas.sprites/bb_EXPORT_main_menu_btn_betdown_dimmed_x=663_y=676_w=29_h=27.tres" type="Texture" id=19]
 [ext_resource path="res://arte/atlas.sprites/bb_EXPORT_main_menu_btn_turbo_down_x=514_y=683_w=141_h=47.tres" type="Texture" id=20]
+[ext_resource path="res://estados/main/character_viewport.gd" type="Script" id=21]
 [ext_resource path="res://arte/atlas.sprites/bb_EXPORT_main_menu_btn_betup_dimmed_x=829_y=676_w=29_h=27.tres" type="Texture" id=22]
 [ext_resource path="res://arte/atlas.sprites/bb_EXPORT_main_menu_btn_double_dimmed_x=164_y=706_w=168_h=43.tres" type="Texture" id=23]
 [ext_resource path="res://arte/atlas.sprites/bb_EXPORT_main_menu_btn_spin_down_x=448_y=651_w=110_h=104.tres" type="Texture" id=24]
@@ -96,6 +98,24 @@ anchor_bottom = 1.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="Character" type="TextureRect" parent="."]
+anchor_right = 0.5
+anchor_bottom = 1.0
+expand = true
+script = ExtResource( 21 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Viewport" type="Viewport" parent="Character"]
+size = Vector2( 600, 800 )
+own_world = true
+transparent_bg = true
+msaa = 2
+render_target_v_flip = true
+
+[node name="character" parent="Character/Viewport" instance=ExtResource( 15 )]
 
 [node name="main_menu" type="TextureRect" parent="."]
 anchor_left = 0.5

@@ -1,0 +1,601 @@
+[gd_scene load_steps=92 format=2]
+
+[ext_resource path="res://estados/bonus/entorno/SM_Prop_Bench_01_2.mesh" type="ArrayMesh" id=1]
+[ext_resource path="res://estados/bonus/entorno/entorno.material" type="Material" id=2]
+[ext_resource path="res://estados/bonus/entorno/glass.material" type="Material" id=3]
+[ext_resource path="res://estados/bonus/entorno/sign.material" type="Material" id=4]
+[ext_resource path="res://estados/bonus/entorno/environment.tres" type="Environment" id=5]
+[ext_resource path="res://estados/bonus/entorno/SM_Prop_Bench_01.mesh" type="ArrayMesh" id=6]
+[ext_resource path="res://estados/bonus/entorno/SM_Env_Sand_Ground_61.mesh" type="ArrayMesh" id=7]
+[ext_resource path="res://estados/bonus/entorno/SM_Bld_Saloon_01_27_6.mesh" type="ArrayMesh" id=8]
+[ext_resource path="res://estados/bonus/entorno/SM_Bld_Saloon_01_27_5.mesh" type="ArrayMesh" id=9]
+[ext_resource path="res://estados/bonus/entorno/SM_Bld_Saloon_01_27_3.mesh" type="ArrayMesh" id=10]
+[ext_resource path="res://estados/bonus/entorno/SM_Bld_Saloon_01_27_4.mesh" type="ArrayMesh" id=11]
+[ext_resource path="res://estados/bonus/entorno/SM_Prop_MessageBoard_2.mesh" type="ArrayMesh" id=12]
+[ext_resource path="res://estados/bonus/entorno/SM_Bld_Saloon_01_27_2.mesh" type="ArrayMesh" id=13]
+[ext_resource path="res://estados/bonus/entorno/SM_Bld_Saloon_01_27_11.mesh" type="ArrayMesh" id=14]
+[ext_resource path="res://estados/bonus/entorno/SM_Bld_Saloon_01_27_10.mesh" type="ArrayMesh" id=15]
+[ext_resource path="res://estados/bonus/entorno/SM_Bld_Saloon_01_27.mesh" type="ArrayMesh" id=16]
+[ext_resource path="res://estados/bonus/entorno/Object_2.mesh" type="ArrayMesh" id=17]
+[ext_resource path="res://estados/bonus/entorno/Object_3.mesh" type="ArrayMesh" id=18]
+[ext_resource path="res://estados/bonus/entorno/Object_4.mesh" type="ArrayMesh" id=19]
+[ext_resource path="res://estados/bonus/entorno/Object_1.mesh" type="ArrayMesh" id=20]
+[ext_resource path="res://estados/bonus/entorno/SM_Bld_Saloon_01_27_9.mesh" type="ArrayMesh" id=21]
+[ext_resource path="res://estados/bonus/entorno/SM_Bld_Sign_189.mesh" type="ArrayMesh" id=22]
+[ext_resource path="res://estados/bonus/entorno/SM_Bld_Saloon_01_27_8.mesh" type="ArrayMesh" id=23]
+[ext_resource path="res://estados/bonus/entorno/SM_Bld_Saloon_01_27_7.mesh" type="ArrayMesh" id=24]
+[ext_resource path="res://estados/bonus/entorno/SM_Prop_Cash_Register_6_2.mesh" type="ArrayMesh" id=25]
+[ext_resource path="res://estados/bonus/entorno/SM_Prop_Cash_Register_6.mesh" type="ArrayMesh" id=26]
+[ext_resource path="res://estados/bonus/entorno/SM_Bld_Jail_01_48_10.mesh" type="ArrayMesh" id=27]
+[ext_resource path="res://estados/bonus/entorno/Object_5.mesh" type="ArrayMesh" id=28]
+[ext_resource path="res://estados/bonus/entorno/SM_Bld_Large_01_33.mesh" type="ArrayMesh" id=29]
+[ext_resource path="res://estados/bonus/entorno/SM_Bld_Jail_01_48_9.mesh" type="ArrayMesh" id=30]
+[ext_resource path="res://estados/bonus/entorno/SM_Bld_Jail_01_48_7.mesh" type="ArrayMesh" id=31]
+[ext_resource path="res://estados/bonus/entorno/SM_Bld_Jail_01_48_8.mesh" type="ArrayMesh" id=32]
+[ext_resource path="res://estados/bonus/entorno/SM_Bld_Jail_01_48_3.mesh" type="ArrayMesh" id=33]
+[ext_resource path="res://estados/bonus/entorno/SM_Bld_Jail_01_48_6.mesh" type="ArrayMesh" id=34]
+[ext_resource path="res://estados/bonus/entorno/SM_Bld_Jail_01_48_4.mesh" type="ArrayMesh" id=35]
+[ext_resource path="res://estados/bonus/entorno/SM_Bld_Jail_01_48_5.mesh" type="ArrayMesh" id=36]
+[ext_resource path="res://estados/bonus/entorno/SM_Bld_Jail_01_48_11.mesh" type="ArrayMesh" id=37]
+[ext_resource path="res://estados/bonus/entorno/SM_Bld_Jail_01_48_2.mesh" type="ArrayMesh" id=38]
+[ext_resource path="res://estados/bonus/entorno/SM_Bld_Jail_01_48_16.mesh" type="ArrayMesh" id=39]
+[ext_resource path="res://estados/bonus/entorno/SM_Bld_Jail_01_48_17.mesh" type="ArrayMesh" id=40]
+[ext_resource path="res://estados/bonus/entorno/SM_Bld_Jail_01_48_12.mesh" type="ArrayMesh" id=41]
+[ext_resource path="res://estados/bonus/entorno/SM_Bld_Jail_01_48_15.mesh" type="ArrayMesh" id=42]
+[ext_resource path="res://estados/bonus/entorno/SM_Bld_Jail_01_48_13.mesh" type="ArrayMesh" id=43]
+[ext_resource path="res://estados/bonus/entorno/SM_Bld_Jail_01_48_14.mesh" type="ArrayMesh" id=44]
+[ext_resource path="res://estados/bonus/entorno/SM_Bld_Jail_01_48.mesh" type="ArrayMesh" id=45]
+[ext_resource path="res://estados/bonus/entorno/SM_Bld_Double_FrontDoor_Window_02_2.mesh" type="ArrayMesh" id=46]
+[ext_resource path="res://estados/bonus/entorno/SM_Bld_Double_Roof_02.mesh" type="ArrayMesh" id=47]
+[ext_resource path="res://estados/bonus/entorno/SM_Bld_Double_FrontDoor_Window_01_2.mesh" type="ArrayMesh" id=48]
+[ext_resource path="res://estados/bonus/entorno/SM_Bld_Double_FrontDoor_Window_01_5.mesh" type="ArrayMesh" id=49]
+[ext_resource path="res://estados/bonus/entorno/SM_Bld_Double_FrontDoor_Window_01_3.mesh" type="ArrayMesh" id=50]
+[ext_resource path="res://estados/bonus/entorno/SM_Bld_Double_FrontDoor_Window_01_4.mesh" type="ArrayMesh" id=51]
+[ext_resource path="res://estados/bonus/entorno/SM_Bld_Double_01_7.mesh" type="ArrayMesh" id=52]
+[ext_resource path="res://estados/bonus/entorno/SM_Bld_Double_FrontDoor_02_2.mesh" type="ArrayMesh" id=53]
+[ext_resource path="res://estados/bonus/entorno/SM_Bld_Double_Facade_01.mesh" type="ArrayMesh" id=54]
+[ext_resource path="res://estados/bonus/entorno/SM_Bld_Double_Front_02.mesh" type="ArrayMesh" id=55]
+[ext_resource path="res://estados/bonus/entorno/SM_Bld_Double_Front_Window_02.mesh" type="ArrayMesh" id=56]
+[ext_resource path="res://estados/bonus/entorno/SM_Bld_Double_01_8.mesh" type="ArrayMesh" id=57]
+[ext_resource path="res://estados/bonus/entorno/SM_Bld_Double_Deck_04.mesh" type="ArrayMesh" id=58]
+[ext_resource path="res://estados/bonus/entorno/SM_Bld_Double_01_9.mesh" type="ArrayMesh" id=59]
+[ext_resource path="res://estados/bonus/entorno/SM_Bld_Double_BackDoor_02.mesh" type="ArrayMesh" id=60]
+[ext_resource path="res://estados/bonus/entorno/SM_Bld_Double_01_6.mesh" type="ArrayMesh" id=61]
+[ext_resource path="res://estados/bonus/entorno/SM_Bld_Double_01_4.mesh" type="ArrayMesh" id=62]
+[ext_resource path="res://estados/bonus/entorno/SM_Bld_Double_01_5.mesh" type="ArrayMesh" id=63]
+[ext_resource path="res://estados/bonus/entorno/SM_Bld_Double_01_17.mesh" type="ArrayMesh" id=64]
+[ext_resource path="res://estados/bonus/entorno/SM_Bld_Double_01_2.mesh" type="ArrayMesh" id=65]
+[ext_resource path="res://estados/bonus/entorno/SM_Bld_Double_01_3.mesh" type="ArrayMesh" id=66]
+[ext_resource path="res://estados/bonus/entorno/SM_Bld_Double_01_18.mesh" type="ArrayMesh" id=67]
+[ext_resource path="res://estados/bonus/entorno/SM_Bld_Double_01_19.mesh" type="ArrayMesh" id=68]
+[ext_resource path="res://estados/bonus/entorno/SM_Bld_Double_01.mesh" type="ArrayMesh" id=69]
+[ext_resource path="res://estados/bonus/entorno/SM_Bld_Double_01_16.mesh" type="ArrayMesh" id=70]
+[ext_resource path="res://estados/bonus/entorno/SM_Bld_Double_01_14.mesh" type="ArrayMesh" id=71]
+[ext_resource path="res://estados/bonus/entorno/SM_Bld_Double_01_15.mesh" type="ArrayMesh" id=72]
+[ext_resource path="res://estados/bonus/entorno/SM_Bld_Double_01_10.mesh" type="ArrayMesh" id=73]
+[ext_resource path="res://estados/bonus/entorno/SM_Bld_Double_01_13.mesh" type="ArrayMesh" id=74]
+[ext_resource path="res://estados/bonus/entorno/SM_Bld_Double_01_11.mesh" type="ArrayMesh" id=75]
+[ext_resource path="res://estados/bonus/entorno/SM_Bld_Double_01_12.mesh" type="ArrayMesh" id=76]
+[ext_resource path="res://estados/bonus/entorno/SM_Bld_DeckSteps_9.mesh" type="ArrayMesh" id=77]
+[ext_resource path="res://estados/bonus/entorno/SM_Bld_Door_Jail_2.mesh" type="ArrayMesh" id=78]
+[ext_resource path="res://estados/bonus/entorno/SM_Bld_DeckSteps_5.mesh" type="ArrayMesh" id=79]
+[ext_resource path="res://estados/bonus/entorno/SM_Prop_Lantern_02.mesh" type="ArrayMesh" id=80]
+[ext_resource path="res://estados/bonus/entorno/SM_Bld_TowerClock_Arm_02.mesh" type="ArrayMesh" id=81]
+[ext_resource path="res://estados/bonus/entorno/SM_Bld_TowerClock_Arm_01.mesh" type="ArrayMesh" id=82]
+[ext_resource path="res://estados/bonus/entorno/SM_Bld_TowerClock_01.mesh" type="ArrayMesh" id=83]
+[ext_resource path="res://estados/bonus/entorno/SM_Bld_Large_01_33_5.mesh" type="ArrayMesh" id=84]
+[ext_resource path="res://estados/bonus/entorno/SM_Bld_Large_01_33_2.mesh" type="ArrayMesh" id=85]
+[ext_resource path="res://estados/bonus/entorno/SM_Bld_Large_01_33_3.mesh" type="ArrayMesh" id=86]
+[ext_resource path="res://estados/bonus/entorno/SM_Bld_Large_01_33_4.mesh" type="ArrayMesh" id=87]
+[ext_resource path="res://estados/bonus/entorno/SM_Prop_Lantern_02_Glass.mesh" type="ArrayMesh" id=88]
+[ext_resource path="res://estados/bonus/entorno/SM_Prop_Sack_02_7.mesh" type="ArrayMesh" id=89]
+[ext_resource path="res://estados/bonus/entorno/SM_Prop_Sack_02_8.mesh" type="ArrayMesh" id=90]
+[ext_resource path="res://estados/bonus/entorno/SM_Prop_Sack_02_9.mesh" type="ArrayMesh" id=91]
+
+[node name="entorno" type="Spatial"]
+
+[node name="Default" type="Spatial" parent="."]
+transform = Transform( 0.001, 0, 0, 0, 0.001, 0, 0, 0, 0.001, -6.90817, 0, 0.0702195 )
+
+[node name="Object_1" type="MeshInstance" parent="Default"]
+use_in_baked_light = true
+mesh = ExtResource( 20 )
+material/0 = null
+
+[node name="Object_2" type="MeshInstance" parent="Default"]
+use_in_baked_light = true
+mesh = ExtResource( 17 )
+material/0 = null
+
+[node name="Object_3" type="MeshInstance" parent="Default"]
+use_in_baked_light = true
+mesh = ExtResource( 18 )
+material/0 = null
+
+[node name="Object_4" type="MeshInstance" parent="Default"]
+use_in_baked_light = true
+mesh = ExtResource( 19 )
+material/0 = null
+
+[node name="Object_5" type="MeshInstance" parent="Default"]
+use_in_baked_light = true
+mesh = ExtResource( 28 )
+material/0 = null
+
+[node name="Rectangle Light#1_Light 01" type="SpotLight" parent="Default"]
+transform = Transform( -104.976, 510.633, 853.366, -62.3452, -859.799, 506.812, 992.518, -2.6258e-05, 122.094, 8317.43, 2945.67, 2963.88 )
+light_color = Color( 0.948503, 0.925374, 0.864273, 1 )
+light_energy = 0.5
+light_specular = 1.0
+shadow_enabled = true
+spot_attenuation = 0.5
+spot_angle = 30.0
+
+[node name="Rectangle Light#2_Light 01" type="OmniLight" parent="Default"]
+transform = Transform( 1000, 0, 0, 0, -1000, -0.000206632, 0, 0.000206632, -1000, 3823.38, 4080, -3561.76 )
+light_color = Color( 0.961688, 0.950401, 0.870615, 1 )
+light_energy = 1.2
+light_specular = 1.0
+omni_range = 4.0
+
+[node name="Rectangle Light#2_Light 01_2" type="OmniLight" parent="Default"]
+transform = Transform( 1000, 0, 0, 0, -1000, -0.000206632, 0, 0.000206632, -1000, 3823.38, 4080, 3526.44 )
+light_color = Color( 0.961688, 0.950401, 0.870615, 1 )
+light_energy = 1.2
+light_specular = 1.0
+omni_range = 4.0
+
+[node name="Rectangle Light#3_Light 01" type="OmniLight" parent="Default"]
+transform = Transform( 1000, 0, 0, 0, -1000, -0.000206632, 0, 0.000206632, -1000, 3823.38, 4080, 189.729 )
+light_color = Color( 0.961688, 0.950401, 0.870615, 1 )
+light_energy = 2.5
+light_specular = 1.0
+omni_range = 4.8
+omni_attenuation = 1.5
+
+[node name="Rectangle Light#4_Light 01" type="SpotLight" parent="Default"]
+transform = Transform( 304.235, 618.33, 724.644, -267.284, -674.736, 687.961, 914.331, -402.988, -40.0083, 8917.44, 3450.45, -2382.47 )
+light_color = Color( 0.946602, 0.857874, 0.758955, 1 )
+light_energy = 0.5
+light_specular = 1.0
+shadow_enabled = true
+spot_range = 6.0
+spot_attenuation = 0.5
+
+[node name="SM_Bld_DeckSteps_5" type="MeshInstance" parent="Default"]
+use_in_baked_light = true
+mesh = ExtResource( 79 )
+material/0 = ExtResource( 2 )
+
+[node name="SM_Bld_DeckSteps_9" type="MeshInstance" parent="Default"]
+use_in_baked_light = true
+mesh = ExtResource( 77 )
+material/0 = ExtResource( 2 )
+
+[node name="SM_Bld_Door_Jail_2" type="MeshInstance" parent="Default"]
+use_in_baked_light = true
+mesh = ExtResource( 78 )
+material/0 = ExtResource( 2 )
+
+[node name="SM_Bld_Double_01" type="MeshInstance" parent="Default"]
+use_in_baked_light = true
+mesh = ExtResource( 69 )
+material/0 = ExtResource( 2 )
+
+[node name="SM_Bld_Double_01_10" type="MeshInstance" parent="Default"]
+use_in_baked_light = true
+mesh = ExtResource( 73 )
+material/0 = ExtResource( 2 )
+
+[node name="SM_Bld_Double_01_11" type="MeshInstance" parent="Default"]
+use_in_baked_light = true
+mesh = ExtResource( 75 )
+material/0 = ExtResource( 2 )
+
+[node name="SM_Bld_Double_01_12" type="MeshInstance" parent="Default"]
+use_in_baked_light = true
+mesh = ExtResource( 76 )
+material/0 = ExtResource( 2 )
+
+[node name="SM_Bld_Double_01_13" type="MeshInstance" parent="Default"]
+use_in_baked_light = true
+mesh = ExtResource( 74 )
+material/0 = ExtResource( 2 )
+
+[node name="SM_Bld_Double_01_14" type="MeshInstance" parent="Default"]
+use_in_baked_light = true
+mesh = ExtResource( 71 )
+material/0 = ExtResource( 2 )
+
+[node name="SM_Bld_Double_01_15" type="MeshInstance" parent="Default"]
+use_in_baked_light = true
+mesh = ExtResource( 72 )
+material/0 = ExtResource( 2 )
+
+[node name="SM_Bld_Double_01_16" type="MeshInstance" parent="Default"]
+use_in_baked_light = true
+mesh = ExtResource( 70 )
+material/0 = ExtResource( 2 )
+
+[node name="SM_Bld_Double_01_17" type="MeshInstance" parent="Default"]
+use_in_baked_light = true
+mesh = ExtResource( 64 )
+material/0 = ExtResource( 2 )
+
+[node name="SM_Bld_Double_01_18" type="MeshInstance" parent="Default"]
+use_in_baked_light = true
+mesh = ExtResource( 67 )
+material/0 = ExtResource( 2 )
+
+[node name="SM_Bld_Double_01_19" type="MeshInstance" parent="Default"]
+use_in_baked_light = true
+mesh = ExtResource( 68 )
+material/0 = ExtResource( 2 )
+
+[node name="SM_Bld_Double_01_2" type="MeshInstance" parent="Default"]
+use_in_baked_light = true
+mesh = ExtResource( 65 )
+material/0 = ExtResource( 2 )
+
+[node name="SM_Bld_Double_01_3" type="MeshInstance" parent="Default"]
+use_in_baked_light = true
+mesh = ExtResource( 66 )
+material/0 = ExtResource( 2 )
+
+[node name="SM_Bld_Double_01_4" type="MeshInstance" parent="Default"]
+use_in_baked_light = true
+mesh = ExtResource( 62 )
+material/0 = ExtResource( 2 )
+
+[node name="SM_Bld_Double_01_5" type="MeshInstance" parent="Default"]
+use_in_baked_light = true
+mesh = ExtResource( 63 )
+material/0 = ExtResource( 2 )
+
+[node name="SM_Bld_Double_01_6" type="MeshInstance" parent="Default"]
+use_in_baked_light = true
+mesh = ExtResource( 61 )
+material/0 = ExtResource( 2 )
+
+[node name="SM_Bld_Double_01_7" type="MeshInstance" parent="Default"]
+use_in_baked_light = true
+mesh = ExtResource( 52 )
+material/0 = ExtResource( 2 )
+
+[node name="SM_Bld_Double_01_8" type="MeshInstance" parent="Default"]
+use_in_baked_light = true
+mesh = ExtResource( 57 )
+material/0 = ExtResource( 2 )
+
+[node name="SM_Bld_Double_01_9" type="MeshInstance" parent="Default"]
+use_in_baked_light = true
+mesh = ExtResource( 59 )
+material/0 = ExtResource( 2 )
+
+[node name="SM_Bld_Double_BackDoor_02" type="MeshInstance" parent="Default"]
+use_in_baked_light = true
+mesh = ExtResource( 60 )
+material/0 = ExtResource( 2 )
+
+[node name="SM_Bld_Double_Deck_04" type="MeshInstance" parent="Default"]
+use_in_baked_light = true
+mesh = ExtResource( 58 )
+material/0 = ExtResource( 2 )
+
+[node name="SM_Bld_Double_Facade_01" type="MeshInstance" parent="Default"]
+use_in_baked_light = true
+mesh = ExtResource( 54 )
+material/0 = ExtResource( 2 )
+
+[node name="SM_Bld_Double_Front_02" type="MeshInstance" parent="Default"]
+use_in_baked_light = true
+mesh = ExtResource( 55 )
+material/0 = ExtResource( 2 )
+
+[node name="SM_Bld_Double_Front_Window_02" type="MeshInstance" parent="Default"]
+use_in_baked_light = true
+mesh = ExtResource( 56 )
+material/0 = ExtResource( 3 )
+
+[node name="SM_Bld_Double_FrontDoor_02_2" type="MeshInstance" parent="Default"]
+use_in_baked_light = true
+mesh = ExtResource( 53 )
+material/0 = ExtResource( 2 )
+
+[node name="SM_Bld_Double_FrontDoor_Window_01_2" type="MeshInstance" parent="Default"]
+use_in_baked_light = true
+mesh = ExtResource( 48 )
+material/0 = ExtResource( 3 )
+
+[node name="SM_Bld_Double_FrontDoor_Window_01_3" type="MeshInstance" parent="Default"]
+use_in_baked_light = true
+mesh = ExtResource( 50 )
+material/0 = ExtResource( 3 )
+
+[node name="SM_Bld_Double_FrontDoor_Window_01_4" type="MeshInstance" parent="Default"]
+use_in_baked_light = true
+mesh = ExtResource( 51 )
+material/0 = ExtResource( 3 )
+
+[node name="SM_Bld_Double_FrontDoor_Window_01_5" type="MeshInstance" parent="Default"]
+use_in_baked_light = true
+mesh = ExtResource( 49 )
+material/0 = ExtResource( 3 )
+
+[node name="SM_Bld_Double_FrontDoor_Window_02_2" type="MeshInstance" parent="Default"]
+use_in_baked_light = true
+mesh = ExtResource( 46 )
+material/0 = ExtResource( 3 )
+
+[node name="SM_Bld_Double_Roof_02" type="MeshInstance" parent="Default"]
+use_in_baked_light = true
+mesh = ExtResource( 47 )
+material/0 = ExtResource( 2 )
+
+[node name="SM_Bld_Jail_01_48" type="MeshInstance" parent="Default"]
+use_in_baked_light = true
+mesh = ExtResource( 45 )
+material/0 = ExtResource( 2 )
+
+[node name="SM_Bld_Jail_01_48_10" type="MeshInstance" parent="Default"]
+use_in_baked_light = true
+mesh = ExtResource( 27 )
+material/0 = ExtResource( 2 )
+
+[node name="SM_Bld_Jail_01_48_11" type="MeshInstance" parent="Default"]
+use_in_baked_light = true
+mesh = ExtResource( 37 )
+material/0 = ExtResource( 2 )
+
+[node name="SM_Bld_Jail_01_48_12" type="MeshInstance" parent="Default"]
+use_in_baked_light = true
+mesh = ExtResource( 41 )
+material/0 = ExtResource( 2 )
+
+[node name="SM_Bld_Jail_01_48_13" type="MeshInstance" parent="Default"]
+use_in_baked_light = true
+mesh = ExtResource( 43 )
+material/0 = ExtResource( 2 )
+
+[node name="SM_Bld_Jail_01_48_14" type="MeshInstance" parent="Default"]
+use_in_baked_light = true
+mesh = ExtResource( 44 )
+material/0 = ExtResource( 2 )
+
+[node name="SM_Bld_Jail_01_48_15" type="MeshInstance" parent="Default"]
+use_in_baked_light = true
+mesh = ExtResource( 42 )
+material/0 = ExtResource( 2 )
+
+[node name="SM_Bld_Jail_01_48_16" type="MeshInstance" parent="Default"]
+use_in_baked_light = true
+mesh = ExtResource( 39 )
+material/0 = ExtResource( 2 )
+
+[node name="SM_Bld_Jail_01_48_17" type="MeshInstance" parent="Default"]
+use_in_baked_light = true
+mesh = ExtResource( 40 )
+material/0 = ExtResource( 2 )
+
+[node name="SM_Bld_Jail_01_48_2" type="MeshInstance" parent="Default"]
+use_in_baked_light = true
+mesh = ExtResource( 38 )
+material/0 = ExtResource( 2 )
+
+[node name="SM_Bld_Jail_01_48_3" type="MeshInstance" parent="Default"]
+use_in_baked_light = true
+mesh = ExtResource( 33 )
+material/0 = ExtResource( 2 )
+
+[node name="SM_Bld_Jail_01_48_4" type="MeshInstance" parent="Default"]
+use_in_baked_light = true
+mesh = ExtResource( 35 )
+material/0 = ExtResource( 2 )
+
+[node name="SM_Bld_Jail_01_48_5" type="MeshInstance" parent="Default"]
+use_in_baked_light = true
+mesh = ExtResource( 36 )
+material/0 = ExtResource( 2 )
+
+[node name="SM_Bld_Jail_01_48_6" type="MeshInstance" parent="Default"]
+use_in_baked_light = true
+mesh = ExtResource( 34 )
+material/0 = ExtResource( 2 )
+
+[node name="SM_Bld_Jail_01_48_7" type="MeshInstance" parent="Default"]
+use_in_baked_light = true
+mesh = ExtResource( 31 )
+material/0 = ExtResource( 2 )
+
+[node name="SM_Bld_Jail_01_48_8" type="MeshInstance" parent="Default"]
+use_in_baked_light = true
+mesh = ExtResource( 32 )
+material/0 = ExtResource( 2 )
+
+[node name="SM_Bld_Jail_01_48_9" type="MeshInstance" parent="Default"]
+use_in_baked_light = true
+mesh = ExtResource( 30 )
+material/0 = ExtResource( 2 )
+
+[node name="SM_Bld_Large_01_33" type="MeshInstance" parent="Default"]
+use_in_baked_light = true
+mesh = ExtResource( 29 )
+material/0 = ExtResource( 2 )
+
+[node name="SM_Bld_Large_01_33_2" type="MeshInstance" parent="Default"]
+use_in_baked_light = true
+mesh = ExtResource( 85 )
+material/0 = ExtResource( 2 )
+
+[node name="SM_Bld_Large_01_33_3" type="MeshInstance" parent="Default"]
+layers = 524288
+use_in_baked_light = true
+mesh = ExtResource( 86 )
+material/0 = ExtResource( 2 )
+
+[node name="SM_Bld_Large_01_33_4" type="MeshInstance" parent="Default"]
+use_in_baked_light = true
+mesh = ExtResource( 87 )
+material/0 = ExtResource( 2 )
+
+[node name="SM_Bld_Large_01_33_5" type="MeshInstance" parent="Default"]
+use_in_baked_light = true
+mesh = ExtResource( 84 )
+material/0 = ExtResource( 2 )
+
+[node name="SM_Bld_Saloon_01_27" type="MeshInstance" parent="Default"]
+use_in_baked_light = true
+mesh = ExtResource( 16 )
+material/0 = ExtResource( 2 )
+
+[node name="SM_Bld_Saloon_01_27_10" type="MeshInstance" parent="Default"]
+use_in_baked_light = true
+mesh = ExtResource( 15 )
+material/0 = ExtResource( 2 )
+
+[node name="SM_Bld_Saloon_01_27_11" type="MeshInstance" parent="Default"]
+use_in_baked_light = true
+mesh = ExtResource( 14 )
+material/0 = ExtResource( 2 )
+
+[node name="SM_Bld_Saloon_01_27_2" type="MeshInstance" parent="Default"]
+use_in_baked_light = true
+mesh = ExtResource( 13 )
+material/0 = ExtResource( 2 )
+
+[node name="SM_Bld_Saloon_01_27_3" type="MeshInstance" parent="Default"]
+use_in_baked_light = true
+mesh = ExtResource( 10 )
+material/0 = ExtResource( 2 )
+
+[node name="SM_Bld_Saloon_01_27_4" type="MeshInstance" parent="Default"]
+use_in_baked_light = true
+mesh = ExtResource( 11 )
+material/0 = ExtResource( 2 )
+
+[node name="SM_Bld_Saloon_01_27_5" type="MeshInstance" parent="Default"]
+use_in_baked_light = true
+mesh = ExtResource( 9 )
+material/0 = ExtResource( 2 )
+
+[node name="SM_Bld_Saloon_01_27_6" type="MeshInstance" parent="Default"]
+use_in_baked_light = true
+mesh = ExtResource( 8 )
+material/0 = ExtResource( 2 )
+
+[node name="SM_Bld_Saloon_01_27_7" type="MeshInstance" parent="Default"]
+use_in_baked_light = true
+mesh = ExtResource( 24 )
+material/0 = ExtResource( 2 )
+
+[node name="SM_Bld_Saloon_01_27_8" type="MeshInstance" parent="Default"]
+use_in_baked_light = true
+mesh = ExtResource( 23 )
+material/0 = ExtResource( 2 )
+
+[node name="SM_Bld_Saloon_01_27_9" type="MeshInstance" parent="Default"]
+use_in_baked_light = true
+mesh = ExtResource( 21 )
+material/0 = ExtResource( 2 )
+
+[node name="SM_Bld_Sign_189" type="MeshInstance" parent="Default"]
+use_in_baked_light = true
+mesh = ExtResource( 22 )
+material/0 = ExtResource( 4 )
+
+[node name="SM_Bld_TowerClock_01" type="MeshInstance" parent="Default"]
+use_in_baked_light = true
+mesh = ExtResource( 83 )
+material/0 = ExtResource( 2 )
+
+[node name="SM_Bld_TowerClock_Arm_01" type="MeshInstance" parent="Default"]
+use_in_baked_light = true
+mesh = ExtResource( 82 )
+material/0 = ExtResource( 2 )
+
+[node name="SM_Bld_TowerClock_Arm_02" type="MeshInstance" parent="Default"]
+use_in_baked_light = true
+mesh = ExtResource( 81 )
+material/0 = ExtResource( 2 )
+
+[node name="SM_Env_Sand_Ground_61" type="MeshInstance" parent="Default"]
+use_in_baked_light = true
+mesh = ExtResource( 7 )
+material/0 = ExtResource( 2 )
+
+[node name="SM_Prop_Bench_01" type="MeshInstance" parent="Default"]
+use_in_baked_light = true
+mesh = ExtResource( 6 )
+material/0 = ExtResource( 2 )
+
+[node name="SM_Prop_Bench_01_2" type="MeshInstance" parent="Default"]
+use_in_baked_light = true
+mesh = ExtResource( 1 )
+material/0 = ExtResource( 2 )
+
+[node name="SM_Prop_Cash_Register_6" type="MeshInstance" parent="Default"]
+use_in_baked_light = true
+mesh = ExtResource( 26 )
+material/0 = ExtResource( 2 )
+
+[node name="SM_Prop_Cash_Register_6_2" type="MeshInstance" parent="Default"]
+use_in_baked_light = true
+mesh = ExtResource( 25 )
+material/0 = ExtResource( 2 )
+
+[node name="SM_Prop_Lantern_02" type="MeshInstance" parent="Default"]
+use_in_baked_light = true
+mesh = ExtResource( 80 )
+material/0 = ExtResource( 2 )
+
+[node name="SM_Prop_Lantern_02_Glass" type="MeshInstance" parent="Default"]
+use_in_baked_light = true
+mesh = ExtResource( 88 )
+material/0 = ExtResource( 2 )
+
+[node name="SM_Prop_MessageBoard_2" type="MeshInstance" parent="Default"]
+use_in_baked_light = true
+mesh = ExtResource( 12 )
+material/0 = ExtResource( 2 )
+
+[node name="SM_Prop_Sack_02_7" type="MeshInstance" parent="Default"]
+use_in_baked_light = true
+mesh = ExtResource( 89 )
+material/0 = ExtResource( 2 )
+
+[node name="SM_Prop_Sack_02_8" type="MeshInstance" parent="Default"]
+use_in_baked_light = true
+mesh = ExtResource( 90 )
+material/0 = ExtResource( 2 )
+
+[node name="SM_Prop_Sack_02_9" type="MeshInstance" parent="Default"]
+use_in_baked_light = true
+mesh = ExtResource( 91 )
+material/0 = ExtResource( 2 )
+
+[node name="Spot Light#2_Light 01" type="SpotLight" parent="Default"]
+transform = Transform( -731.439, 11.7757, -681.805, -7.57022e-05, -999.851, -17.2687, -681.906, -12.631, 731.33, 7698.28, 2349.92, 4756.76 )
+light_color = Color( 0.970975, 0.938949, 0.790433, 1 )
+light_energy = 0.5
+light_specular = 1.0
+spot_range = 10.0
+spot_angle = 50.0
+spot_angle_attenuation = 0.433493
+
+[node name="Spot Light#3_Light 01" type="SpotLight" parent="Default"]
+transform = Transform( 444.734, 41.6721, -894.693, -0.000147114, -998.917, -46.5266, -895.662, 20.6921, -444.253, 7699.96, 2844.02, -4632.11 )
+light_color = Color( 0.970975, 0.938949, 0.790433, 1 )
+light_energy = 0.5
+light_specular = 1.0
+spot_range = 10.0
+spot_angle = 50.0
+spot_angle_attenuation = 0.432443
+
+[node name="Escena-Banco-02" type="Camera" parent="."]
+transform = Transform( -1.04894e-05, 1.04712e-05, -0.00099989, 0, 0.000999945, 1.04718e-05, 0.000999945, 1.09843e-07, -1.04889e-05, -8.14394, 1.92998, 0.0395533 )
+fov = 40.0
+near = 0.1
+far = 30.0
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = ExtResource( 5 )

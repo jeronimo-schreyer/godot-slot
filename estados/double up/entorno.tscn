@@ -1,0 +1,1623 @@
+[gd_scene load_steps=267 format=2]
+
+[ext_resource path="res://estados/double up/entorno/entorno.material" type="Material" id=1]
+[ext_resource path="res://estados/double up/entorno/environment.tres" type="Environment" id=2]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_01_Dirt8_5.mesh" type="ArrayMesh" id=3]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_01_Dirt8_9.mesh" type="ArrayMesh" id=4]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_01_Dirt8_7.mesh" type="ArrayMesh" id=5]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_01_Dirt9_6.mesh" type="ArrayMesh" id=6]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_01_Dirt9.mesh" type="ArrayMesh" id=7]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_5_8.mesh" type="ArrayMesh" id=8]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_01_Dirt_38_4.mesh" type="ArrayMesh" id=9]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_01_Dirt9_8.mesh" type="ArrayMesh" id=10]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_01_Dirt8_8.mesh" type="ArrayMesh" id=11]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_01_Dirt_38.mesh" type="ArrayMesh" id=12]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_01_Dirt9_4.mesh" type="ArrayMesh" id=13]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_01_Dirt_38_3.mesh" type="ArrayMesh" id=14]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_01_Dirt_38_2.mesh" type="ArrayMesh" id=15]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_01_Dirt8_6.mesh" type="ArrayMesh" id=16]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_01_Dirt9_10.mesh" type="ArrayMesh" id=17]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_01_Dirt_38_10.mesh" type="ArrayMesh" id=18]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_01_Dirt9_5.mesh" type="ArrayMesh" id=19]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_01_Dirt9_2.mesh" type="ArrayMesh" id=20]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_01_Dirt9_3.mesh" type="ArrayMesh" id=21]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_01_Dirt9_7.mesh" type="ArrayMesh" id=22]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_01_Dirt9_9.mesh" type="ArrayMesh" id=23]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_6_3.mesh" type="ArrayMesh" id=24]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_6_4.mesh" type="ArrayMesh" id=25]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_6_5.mesh" type="ArrayMesh" id=26]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_6_6.mesh" type="ArrayMesh" id=27]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_6_7.mesh" type="ArrayMesh" id=28]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_6_8.mesh" type="ArrayMesh" id=29]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_6_9.mesh" type="ArrayMesh" id=30]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_7.mesh" type="ArrayMesh" id=31]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_7_10.mesh" type="ArrayMesh" id=32]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_7_2.mesh" type="ArrayMesh" id=33]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_7_3.mesh" type="ArrayMesh" id=34]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_7_4.mesh" type="ArrayMesh" id=35]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_7_5.mesh" type="ArrayMesh" id=36]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_7_6.mesh" type="ArrayMesh" id=37]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_7_7.mesh" type="ArrayMesh" id=38]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_7_8.mesh" type="ArrayMesh" id=39]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_7_9.mesh" type="ArrayMesh" id=40]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_8.mesh" type="ArrayMesh" id=41]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_8_10.mesh" type="ArrayMesh" id=42]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_8_2.mesh" type="ArrayMesh" id=43]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_8_3.mesh" type="ArrayMesh" id=44]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_8_4.mesh" type="ArrayMesh" id=45]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_8_5.mesh" type="ArrayMesh" id=46]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_8_6.mesh" type="ArrayMesh" id=47]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_8_7.mesh" type="ArrayMesh" id=48]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_8_8.mesh" type="ArrayMesh" id=49]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_8_9.mesh" type="ArrayMesh" id=50]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_9.mesh" type="ArrayMesh" id=51]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_9_10.mesh" type="ArrayMesh" id=52]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_9_2.mesh" type="ArrayMesh" id=53]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_9_3.mesh" type="ArrayMesh" id=54]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_9_4.mesh" type="ArrayMesh" id=55]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_9_5.mesh" type="ArrayMesh" id=56]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_9_6.mesh" type="ArrayMesh" id=57]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_9_7.mesh" type="ArrayMesh" id=58]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_9_8.mesh" type="ArrayMesh" id=59]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_9_9.mesh" type="ArrayMesh" id=60]
+[ext_resource path="res://estados/double up/entorno/SM_Env_TreeDead_03_58.mesh" type="ArrayMesh" id=61]
+[ext_resource path="res://estados/double up/entorno/SM_Env_TreeDead_03_58_2.mesh" type="ArrayMesh" id=62]
+[ext_resource path="res://estados/double up/entorno/SM_Env_TreeDead_55.mesh" type="ArrayMesh" id=63]
+[ext_resource path="res://estados/double up/entorno/SM_Env_TreeDead_55_2.mesh" type="ArrayMesh" id=64]
+[ext_resource path="res://estados/double up/entorno/SM_Env_TreeDead_55_3.mesh" type="ArrayMesh" id=65]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_01_Dirt5_2.mesh" type="ArrayMesh" id=66]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_01_Dirt5.mesh" type="ArrayMesh" id=67]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_01_Dirt4_9.mesh" type="ArrayMesh" id=68]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_01_Dirt4_8.mesh" type="ArrayMesh" id=69]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_01_Dirt4_7.mesh" type="ArrayMesh" id=70]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_01_Dirt4_6.mesh" type="ArrayMesh" id=71]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_01_Dirt4_5.mesh" type="ArrayMesh" id=72]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_01_Dirt4_4.mesh" type="ArrayMesh" id=73]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_01_Dirt4_3.mesh" type="ArrayMesh" id=74]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_01_Dirt4_2.mesh" type="ArrayMesh" id=75]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_01_Dirt4_10.mesh" type="ArrayMesh" id=76]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_01_Dirt4.mesh" type="ArrayMesh" id=77]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_01_Dirt3_9.mesh" type="ArrayMesh" id=78]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_01_Dirt3_8.mesh" type="ArrayMesh" id=79]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_01_Dirt3_7.mesh" type="ArrayMesh" id=80]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_5_3.mesh" type="ArrayMesh" id=81]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_01_Dirt5_3.mesh" type="ArrayMesh" id=82]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_01_Dirt6_10.mesh" type="ArrayMesh" id=83]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_01_Dirt5_6.mesh" type="ArrayMesh" id=84]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_01_Dirt5_9.mesh" type="ArrayMesh" id=85]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_01_Dirt6.mesh" type="ArrayMesh" id=86]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_01_Dirt5_7.mesh" type="ArrayMesh" id=87]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_01_Dirt5_4.mesh" type="ArrayMesh" id=88]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_01_Dirt5_8.mesh" type="ArrayMesh" id=89]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_01_Dirt5_5.mesh" type="ArrayMesh" id=90]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_01_Dirt3_6.mesh" type="ArrayMesh" id=91]
+[ext_resource path="res://estados/double up/entorno/Object_1.mesh" type="ArrayMesh" id=92]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_01_Dirt6_2.mesh" type="ArrayMesh" id=93]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_01_Dirt8_2.mesh" type="ArrayMesh" id=94]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_01_Dirt8.mesh" type="ArrayMesh" id=95]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_01_Dirt8_10.mesh" type="ArrayMesh" id=96]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_01_Dirt7_6.mesh" type="ArrayMesh" id=97]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_01_Dirt7_9.mesh" type="ArrayMesh" id=98]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_01_Dirt7_7.mesh" type="ArrayMesh" id=99]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_01_Dirt7_8.mesh" type="ArrayMesh" id=100]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_5_5.mesh" type="ArrayMesh" id=101]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_01_Dirt7_5.mesh" type="ArrayMesh" id=102]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_01_Dirt7_3.mesh" type="ArrayMesh" id=103]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_01_Dirt7_4.mesh" type="ArrayMesh" id=104]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_01_Dirt6_3.mesh" type="ArrayMesh" id=105]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_01_Dirt7_2.mesh" type="ArrayMesh" id=106]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_01_Dirt7.mesh" type="ArrayMesh" id=107]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_01_Dirt7_10.mesh" type="ArrayMesh" id=108]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_01_Dirt6_4.mesh" type="ArrayMesh" id=109]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_01_Dirt6_9.mesh" type="ArrayMesh" id=110]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_01_Dirt6_7.mesh" type="ArrayMesh" id=111]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_01_Dirt6_8.mesh" type="ArrayMesh" id=112]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_01_Dirt6_5.mesh" type="ArrayMesh" id=113]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_01_Dirt6_6.mesh" type="ArrayMesh" id=114]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_01_Dirt8_3.mesh" type="ArrayMesh" id=115]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_01_Dirt8_4.mesh" type="ArrayMesh" id=116]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_5.mesh" type="ArrayMesh" id=117]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_5_6.mesh" type="ArrayMesh" id=118]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_4_8.mesh" type="ArrayMesh" id=119]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_4_9.mesh" type="ArrayMesh" id=120]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_01_Dirt_38_9.mesh" type="ArrayMesh" id=121]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_3.mesh" type="ArrayMesh" id=122]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_42.mesh" type="ArrayMesh" id=123]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_3_10.mesh" type="ArrayMesh" id=124]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_3_2.mesh" type="ArrayMesh" id=125]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_01_Dirt_38_8.mesh" type="ArrayMesh" id=126]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_3_6.mesh" type="ArrayMesh" id=127]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_4.mesh" type="ArrayMesh" id=128]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_01_Dirt_38_7.mesh" type="ArrayMesh" id=129]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_01_Dirt_38_6.mesh" type="ArrayMesh" id=130]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_5_9.mesh" type="ArrayMesh" id=131]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_3_3.mesh" type="ArrayMesh" id=132]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_01_Dirt_38_5.mesh" type="ArrayMesh" id=133]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_3_8.mesh" type="ArrayMesh" id=134]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_3_9.mesh" type="ArrayMesh" id=135]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_3_7.mesh" type="ArrayMesh" id=136]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_3_4.mesh" type="ArrayMesh" id=137]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_3_5.mesh" type="ArrayMesh" id=138]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_5_2.mesh" type="ArrayMesh" id=139]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_6_2.mesh" type="ArrayMesh" id=140]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_42_7.mesh" type="ArrayMesh" id=141]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_42_8.mesh" type="ArrayMesh" id=142]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_42_5.mesh" type="ArrayMesh" id=143]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_42_6.mesh" type="ArrayMesh" id=144]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_42_10.mesh" type="ArrayMesh" id=145]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_42_3.mesh" type="ArrayMesh" id=146]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_42_4.mesh" type="ArrayMesh" id=147]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_6_10.mesh" type="ArrayMesh" id=148]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_42_2.mesh" type="ArrayMesh" id=149]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Sand_Ground_53_5.mesh" type="ArrayMesh" id=150]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Sand_Ground_53_4.mesh" type="ArrayMesh" id=151]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_01_Dirt3_4.mesh" type="ArrayMesh" id=152]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_5_4.mesh" type="ArrayMesh" id=153]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_01_Dirt3_5.mesh" type="ArrayMesh" id=154]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_01_Dirt3_2.mesh" type="ArrayMesh" id=155]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_01_Dirt3_3.mesh" type="ArrayMesh" id=156]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_01_Dirt2_8.mesh" type="ArrayMesh" id=157]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_01_Dirt3_10.mesh" type="ArrayMesh" id=158]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_01_Dirt2_9.mesh" type="ArrayMesh" id=159]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_01_Dirt3.mesh" type="ArrayMesh" id=160]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Sand_Ground_81.mesh" type="ArrayMesh" id=161]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_01_Dirt2_7.mesh" type="ArrayMesh" id=162]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_01_Dirt2_5.mesh" type="ArrayMesh" id=163]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_01_Dirt2_6.mesh" type="ArrayMesh" id=164]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_01_Dirt2_10.mesh" type="ArrayMesh" id=165]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_01_Dirt2_4.mesh" type="ArrayMesh" id=166]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_01_Dirt2_2.mesh" type="ArrayMesh" id=167]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_01_Dirt2_3.mesh" type="ArrayMesh" id=168]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Sand_Ground_81_2.mesh" type="ArrayMesh" id=169]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_01_Dirt2.mesh" type="ArrayMesh" id=170]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_01_35_8.mesh" type="ArrayMesh" id=171]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_01_35_9.mesh" type="ArrayMesh" id=172]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_01_35_4.mesh" type="ArrayMesh" id=173]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_01_35_7.mesh" type="ArrayMesh" id=174]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_01_35_5.mesh" type="ArrayMesh" id=175]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_01_35_6.mesh" type="ArrayMesh" id=176]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Sand_Ground_81_3.mesh" type="ArrayMesh" id=177]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_01_35_3.mesh" type="ArrayMesh" id=178]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_01_35_10.mesh" type="ArrayMesh" id=179]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_01_35_2.mesh" type="ArrayMesh" id=180]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Sand_Ground_81_4.mesh" type="ArrayMesh" id=181]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_01_35.mesh" type="ArrayMesh" id=182]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Curve_01_59.mesh" type="ArrayMesh" id=183]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Curve_01_Dirt_62.mesh" type="ArrayMesh" id=184]
+[ext_resource path="res://estados/double up/entorno/Object_10.mesh" type="ArrayMesh" id=185]
+[ext_resource path="res://estados/double up/entorno/Object_12.mesh" type="ArrayMesh" id=186]
+[ext_resource path="res://estados/double up/entorno/Object_16.mesh" type="ArrayMesh" id=187]
+[ext_resource path="res://estados/double up/entorno/Object_14.mesh" type="ArrayMesh" id=188]
+[ext_resource path="res://estados/double up/entorno/Object_17.mesh" type="ArrayMesh" id=189]
+[ext_resource path="res://estados/double up/entorno/Object_15.mesh" type="ArrayMesh" id=190]
+[ext_resource path="res://estados/double up/entorno/Object_18.mesh" type="ArrayMesh" id=191]
+[ext_resource path="res://estados/double up/entorno/Object_2.mesh" type="ArrayMesh" id=192]
+[ext_resource path="res://estados/double up/entorno/Object_13.mesh" type="ArrayMesh" id=193]
+[ext_resource path="res://estados/double up/entorno/Object_19.mesh" type="ArrayMesh" id=194]
+[ext_resource path="res://estados/double up/entorno/Object_3.mesh" type="ArrayMesh" id=195]
+[ext_resource path="res://estados/double up/entorno/Object_4.mesh" type="ArrayMesh" id=196]
+[ext_resource path="res://estados/double up/entorno/Object_5.mesh" type="ArrayMesh" id=197]
+[ext_resource path="res://estados/double up/entorno/Object_6.mesh" type="ArrayMesh" id=198]
+[ext_resource path="res://estados/double up/entorno/Object_7.mesh" type="ArrayMesh" id=199]
+[ext_resource path="res://estados/double up/entorno/Object_8.mesh" type="ArrayMesh" id=200]
+[ext_resource path="res://estados/double up/entorno/Object_9.mesh" type="ArrayMesh" id=201]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Butte_10.mesh" type="ArrayMesh" id=202]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_6.mesh" type="ArrayMesh" id=203]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Butte_10_2.mesh" type="ArrayMesh" id=204]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Butte_11.mesh" type="ArrayMesh" id=205]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Butte_24.mesh" type="ArrayMesh" id=206]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Butte_25.mesh" type="ArrayMesh" id=207]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Butte_26.mesh" type="ArrayMesh" id=208]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Butte_27.mesh" type="ArrayMesh" id=209]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Butte_30.mesh" type="ArrayMesh" id=210]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Butte_30_2.mesh" type="ArrayMesh" id=211]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Butte_32.mesh" type="ArrayMesh" id=212]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Butte_59.mesh" type="ArrayMesh" id=213]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Butte_59_2.mesh" type="ArrayMesh" id=214]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Butte_59_3.mesh" type="ArrayMesh" id=215]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Butte_59_4.mesh" type="ArrayMesh" id=216]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Butte_59_5.mesh" type="ArrayMesh" id=217]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Butte_59_6.mesh" type="ArrayMesh" id=218]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Butte_59_7.mesh" type="ArrayMesh" id=219]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Butte_9.mesh" type="ArrayMesh" id=220]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Butte_Base_10.mesh" type="ArrayMesh" id=221]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Butte_Base_11.mesh" type="ArrayMesh" id=222]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Butte_Base_12.mesh" type="ArrayMesh" id=223]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Butte_Base_15.mesh" type="ArrayMesh" id=224]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Butte_Base_15_2.mesh" type="ArrayMesh" id=225]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Butte_Base_17.mesh" type="ArrayMesh" id=226]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Butte_Base_5.mesh" type="ArrayMesh" id=227]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Cactus_01.mesh" type="ArrayMesh" id=228]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Cactus_01_2.mesh" type="ArrayMesh" id=229]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Cactus_02.mesh" type="ArrayMesh" id=230]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Cliff_Cap_27.mesh" type="ArrayMesh" id=231]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Cliff_Cap_29.mesh" type="ArrayMesh" id=232]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Cliff_Cap_29_2.mesh" type="ArrayMesh" id=233]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Cliff_Cap_29_3.mesh" type="ArrayMesh" id=234]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Cliff_Cap_30.mesh" type="ArrayMesh" id=235]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Cliff_Cap_31.mesh" type="ArrayMesh" id=236]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Grass_01.mesh" type="ArrayMesh" id=237]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Grass_01_2.mesh" type="ArrayMesh" id=238]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Grass_01_3.mesh" type="ArrayMesh" id=239]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Grass_01_4.mesh" type="ArrayMesh" id=240]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Grass_03.mesh" type="ArrayMesh" id=241]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Rock_01.mesh" type="ArrayMesh" id=242]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Rock_02.mesh" type="ArrayMesh" id=243]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Sand_Ground_168.mesh" type="ArrayMesh" id=244]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Sand_Ground_168_2.mesh" type="ArrayMesh" id=245]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Sand_Ground_168_3.mesh" type="ArrayMesh" id=246]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Sand_Ground_203.mesh" type="ArrayMesh" id=247]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Sand_Ground_29.mesh" type="ArrayMesh" id=248]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Sand_Ground_31.mesh" type="ArrayMesh" id=249]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Sand_Ground_31_2.mesh" type="ArrayMesh" id=250]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Sand_Ground_31_3.mesh" type="ArrayMesh" id=251]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Sand_Ground_32.mesh" type="ArrayMesh" id=252]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Sand_Ground_32_2.mesh" type="ArrayMesh" id=253]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Sand_Ground_32_3.mesh" type="ArrayMesh" id=254]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Sand_Ground_53.mesh" type="ArrayMesh" id=255]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Sand_Ground_53_2.mesh" type="ArrayMesh" id=256]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Sand_Ground_53_3.mesh" type="ArrayMesh" id=257]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_5_7.mesh" type="ArrayMesh" id=258]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_4_7.mesh" type="ArrayMesh" id=259]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_42_9.mesh" type="ArrayMesh" id=260]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_4_6.mesh" type="ArrayMesh" id=261]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_4_4.mesh" type="ArrayMesh" id=262]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_4_5.mesh" type="ArrayMesh" id=263]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_4_3.mesh" type="ArrayMesh" id=264]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_4_2.mesh" type="ArrayMesh" id=265]
+[ext_resource path="res://estados/double up/entorno/SM_Env_Train_Track_Straight_4_10.mesh" type="ArrayMesh" id=266]
+
+[node name="entorno" type="Spatial"]
+
+[node name="Default" type="Spatial" parent="."]
+transform = Transform( 0.001, 0, 0, 0, 0.001, 0, 0, 0, 0.001, 0, 0, 0 )
+
+[node name="Dome Light" type="DirectionalLight" parent="Default"]
+transform = Transform( -748.03, 623.641, -226.987, 0, 342.02, 939.693, 663.665, 702.918, -255.841, 0, 9165.43, 0 )
+light_specular = 1.0
+shadow_enabled = true
+directional_shadow_mode = 0
+directional_shadow_normal_bias = 1.5
+
+[node name="Object_1" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 92 )
+material/0 = ExtResource( 1 )
+
+[node name="Object_10" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 185 )
+material/0 = ExtResource( 1 )
+
+[node name="Object_12" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 186 )
+material/0 = ExtResource( 1 )
+
+[node name="Object_13" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 193 )
+material/0 = ExtResource( 1 )
+
+[node name="Object_14" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 188 )
+material/0 = ExtResource( 1 )
+
+[node name="Object_15" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 190 )
+material/0 = ExtResource( 1 )
+
+[node name="Object_16" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 187 )
+material/0 = ExtResource( 1 )
+
+[node name="Object_17" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 189 )
+material/0 = ExtResource( 1 )
+
+[node name="Object_18" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 900, 72786.8 )
+mesh = ExtResource( 191 )
+material/0 = ExtResource( 1 )
+
+[node name="Object_19" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 194 )
+material/0 = ExtResource( 1 )
+
+[node name="Object_2" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 192 )
+material/0 = ExtResource( 1 )
+
+[node name="Object_3" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 195 )
+material/0 = ExtResource( 1 )
+
+[node name="Object_4" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 196 )
+material/0 = ExtResource( 1 )
+
+[node name="Object_5" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, -1668.88, 72786.8 )
+mesh = ExtResource( 197 )
+material/0 = ExtResource( 1 )
+
+[node name="Object_6" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 198 )
+material/0 = ExtResource( 1 )
+
+[node name="Object_7" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 199 )
+material/0 = ExtResource( 1 )
+
+[node name="Object_8" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 200 )
+material/0 = ExtResource( 1 )
+
+[node name="Object_9" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 201 )
+material/0 = ExtResource( 1 )
+
+[node name="Omni Light_Light 01" type="OmniLight" parent="Default"]
+transform = Transform( 1, 0, 0, 0, -1, -2.06632e-07, 0, 2.06632e-07, -1, 743.143, 69208, -260.672 )
+visible = false
+light_energy = 0.85
+light_specular = 1.0
+shadow_enabled = true
+omni_range = 40.0
+
+[node name="SM_Env_Butte_10" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 202 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Butte_10_2" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 204 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Butte_11" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 205 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Butte_24" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 206 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Butte_25" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 207 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Butte_26" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 208 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Butte_27" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 209 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Butte_30" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 210 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Butte_30_2" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 211 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Butte_32" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 212 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Butte_59" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 213 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Butte_59_2" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 214 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Butte_59_3" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 215 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Butte_59_4" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 216 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Butte_59_5" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 217 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Butte_59_6" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 218 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Butte_59_7" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 219 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Butte_9" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 220 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Butte_Base_10" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 221 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Butte_Base_11" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 222 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Butte_Base_12" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 223 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Butte_Base_15" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 224 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Butte_Base_15_2" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 225 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Butte_Base_17" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 226 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Butte_Base_5" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 227 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Cactus_01" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 228 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Cactus_01_2" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 229 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Cactus_02" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 230 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Cliff_Cap_27" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 231 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Cliff_Cap_29" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 232 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Cliff_Cap_29_2" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 233 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Cliff_Cap_29_3" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 234 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Cliff_Cap_30" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 235 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Cliff_Cap_31" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 236 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Grass_01" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 237 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Grass_01_2" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 238 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Grass_01_3" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 239 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Grass_01_4" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 240 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Grass_03" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 241 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Rock_01" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 242 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Rock_02" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 243 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Sand_Ground_168" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 244 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Sand_Ground_168_2" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 245 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Sand_Ground_168_3" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 246 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Sand_Ground_203" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 247 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Sand_Ground_29" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 248 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Sand_Ground_31" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 249 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Sand_Ground_31_2" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 250 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Sand_Ground_31_3" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 251 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Sand_Ground_32" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 252 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Sand_Ground_32_2" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 253 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Sand_Ground_32_3" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 254 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Sand_Ground_53" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 255 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Sand_Ground_53_2" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 256 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Sand_Ground_53_3" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 257 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Sand_Ground_53_4" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 151 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Sand_Ground_53_5" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 150 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Sand_Ground_81" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 161 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Sand_Ground_81_2" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 169 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Sand_Ground_81_3" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 177 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Sand_Ground_81_4" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 181 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Curve_01_59" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 183 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Curve_01_Dirt_62" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 184 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_01_35" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 182 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_01_35_10" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 179 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_01_35_2" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 180 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_01_35_3" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 178 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_01_35_4" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 173 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_01_35_5" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 175 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_01_35_6" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 176 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_01_35_7" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 174 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_01_35_8" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 171 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_01_35_9" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 172 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_01_Dirt2" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 170 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_01_Dirt2_10" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 165 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_01_Dirt2_2" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 167 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_01_Dirt2_3" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 168 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_01_Dirt2_4" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 166 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_01_Dirt2_5" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 163 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_01_Dirt2_6" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 164 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_01_Dirt2_7" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 162 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_01_Dirt2_8" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 157 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_01_Dirt2_9" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 159 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_01_Dirt3" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 160 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_01_Dirt3_10" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 158 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_01_Dirt3_2" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 155 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_01_Dirt3_3" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 156 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_01_Dirt3_4" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 152 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_01_Dirt3_5" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 154 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_01_Dirt3_6" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 91 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_01_Dirt3_7" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 80 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_01_Dirt3_8" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 79 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_01_Dirt3_9" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 78 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_01_Dirt4" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 77 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_01_Dirt4_10" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 76 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_01_Dirt4_2" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 75 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_01_Dirt4_3" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 74 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_01_Dirt4_4" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 73 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_01_Dirt4_5" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 72 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_01_Dirt4_6" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 71 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_01_Dirt4_7" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 70 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_01_Dirt4_8" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 69 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_01_Dirt4_9" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 68 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_01_Dirt5" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 67 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_01_Dirt5_2" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 66 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_01_Dirt5_3" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 82 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_01_Dirt5_4" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 88 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_01_Dirt5_5" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 90 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_01_Dirt5_6" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 84 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_01_Dirt5_7" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 87 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_01_Dirt5_8" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 89 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_01_Dirt5_9" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 85 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_01_Dirt6" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 86 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_01_Dirt6_10" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 83 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_01_Dirt6_2" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 93 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_01_Dirt6_3" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 105 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_01_Dirt6_4" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 109 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_01_Dirt6_5" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 113 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_01_Dirt6_6" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 114 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_01_Dirt6_7" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 111 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_01_Dirt6_8" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 112 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_01_Dirt6_9" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 110 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_01_Dirt7" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 107 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_01_Dirt7_10" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 108 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_01_Dirt7_2" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 106 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_01_Dirt7_3" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 103 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_01_Dirt7_4" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 104 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_01_Dirt7_5" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 102 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_01_Dirt7_6" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 97 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_01_Dirt7_7" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 99 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_01_Dirt7_8" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 100 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_01_Dirt7_9" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 98 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_01_Dirt8" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 95 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_01_Dirt8_10" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 96 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_01_Dirt8_2" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 94 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_01_Dirt8_3" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 115 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_01_Dirt8_4" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 116 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_01_Dirt8_5" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 3 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_01_Dirt8_6" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 16 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_01_Dirt8_7" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 5 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_01_Dirt8_8" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 11 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_01_Dirt8_9" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 4 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_01_Dirt9" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 7 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_01_Dirt9_10" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 17 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_01_Dirt9_2" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 20 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_01_Dirt9_3" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 21 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_01_Dirt9_4" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 13 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_01_Dirt9_5" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 19 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_01_Dirt9_6" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 6 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_01_Dirt9_7" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 22 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_01_Dirt9_8" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 10 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_01_Dirt9_9" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 23 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_01_Dirt_38" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 12 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_01_Dirt_38_10" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 18 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_01_Dirt_38_2" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 15 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_01_Dirt_38_3" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 14 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_01_Dirt_38_4" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 9 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_01_Dirt_38_5" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 133 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_01_Dirt_38_6" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 130 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_01_Dirt_38_7" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 129 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_01_Dirt_38_8" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 126 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_01_Dirt_38_9" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 121 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_3" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 122 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_3_10" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 124 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_3_2" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 125 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_3_3" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 132 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_3_4" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 137 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_3_5" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 138 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_3_6" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 127 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_3_7" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 136 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_3_8" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 134 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_3_9" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 135 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_4" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 128 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_42" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 123 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_42_10" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 145 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_42_2" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 149 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_42_3" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 146 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_42_4" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 147 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_42_5" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 143 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_42_6" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 144 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_42_7" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 141 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_42_8" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 142 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_42_9" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 260 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_4_10" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 266 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_4_2" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 265 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_4_3" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 264 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_4_4" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 262 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_4_5" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 263 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_4_6" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 261 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_4_7" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 259 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_4_8" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 119 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_4_9" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 120 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_5" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 117 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_5_2" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 139 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_5_3" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 81 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_5_4" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 153 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_5_5" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 101 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_5_6" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 118 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_5_7" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 258 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_5_8" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 8 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_5_9" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 131 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_6" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 203 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_6_10" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 148 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_6_2" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 140 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_6_3" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 24 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_6_4" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 25 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_6_5" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 26 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_6_6" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 27 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_6_7" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 28 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_6_8" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 29 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_6_9" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 30 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_7" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 31 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_7_10" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 32 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_7_2" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 33 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_7_3" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 34 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_7_4" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 35 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_7_5" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 36 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_7_6" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 37 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_7_7" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 38 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_7_8" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 39 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_7_9" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 40 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_8" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 41 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_8_10" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 42 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_8_2" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 43 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_8_3" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 44 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_8_4" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 45 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_8_5" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 46 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_8_6" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 47 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_8_7" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 48 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_8_8" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 49 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_8_9" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 50 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_9" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 51 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_9_10" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 52 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_9_2" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 53 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_9_3" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 54 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_9_4" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 55 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_9_5" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 56 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_9_6" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 57 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_9_7" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 58 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_9_8" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 59 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_Train_Track_Straight_9_9" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 60 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_TreeDead_03_58" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 61 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_TreeDead_03_58_2" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 62 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_TreeDead_55" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 63 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_TreeDead_55_2" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 64 )
+material/0 = ExtResource( 1 )
+
+[node name="SM_Env_TreeDead_55_3" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 157838, 0, 72786.8 )
+mesh = ExtResource( 65 )
+material/0 = ExtResource( 1 )
+
+[node name="Perspectiva-B" type="Camera" parent="."]
+transform = Transform( 0.500287, 0.0684489, -0.86315, 0, 0.99687, 0.0790531, 0.86586, -0.0395492, 0.498721, -63.4046, 7.6927, 90.9128 )
+fov = 40.0
+near = 0.1
+far = 300.0
+
+[node name="Perspectiva-A" type="Camera" parent="."]
+transform = Transform( 0.684788, 0.106887, -0.720861, 0, 0.989185, 0.146673, 0.728742, -0.10044, 0.677382, -86.2922, 14.3818, 119.195 )
+fov = 40.0
+near = 0.1
+far = 300.0
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = ExtResource( 2 )
