@@ -102,7 +102,10 @@ __meta__ = {
 [node name="Character" type="TextureRect" parent="."]
 anchor_right = 0.5
 anchor_bottom = 1.0
+margin_top = 144.0
+margin_right = -192.0
 expand = true
+stretch_mode = 7
 script = ExtResource( 21 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -212,6 +215,7 @@ margin_left = 455.5
 margin_top = 39.0
 margin_right = 596.5
 margin_bottom = 86.0
+toggle_mode = true
 texture_normal = ExtResource( 13 )
 texture_pressed = ExtResource( 20 )
 texture_disabled = ExtResource( 25 )

@@ -18,21 +18,23 @@ func play():
 	$"Main UI".set_ui_enable(false)
 	
 	#start reels
-	$"Main UI/reel/Reels".startSpin()
+	$"Main UI/reel/Reels".start_spin()
 	
 	# send request
 	var req = yield(http.send("spin"), "finished")
 	#print(req.result.TOTALPAY)
 	
 	# stop reels on stop points
-	yield($"Main UI/reel/Reels".stopSpin(req.result.STOP), "all_reels_stopped")
+	yield($"Main UI/reel/Reels".stop_spin(req.result.STOP), "all_reels_stopped")
 	
-	# show ramp
 	if req.result.TOTALPAY > 0:
+		# show ramp
 		var ramp_node = ramp.instance()
 		add_child(ramp_node)
+		#yield(ramp_node.ramp(req.result.TOTALPAY), "finished")
 		
-		yield(ramp_node.ramp(req.result.TOTALPAY), "finished")
+		# show winning lines
+		yield($"Main UI/reel/Reels".show_winning_lines(req.result.PAYOUTS, false), "show_winning_lines_finished")
 	
 	# update ui values
 	$"Main UI".update_jackpot(req.result)

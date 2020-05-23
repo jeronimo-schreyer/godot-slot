@@ -1,5 +1,7 @@
 extends TextureRect
 
+signal anim_finished
+
 var symbols = {
 	"sym_a": [
 		preload("res://arte/atlassym2.sprites/sym_a.tres"),
@@ -42,6 +44,10 @@ var symbols = {
 		preload("res://arte/atlassym2.sprites/sym_sherif_b.tres")
 	],
 	"sym_c": [
+		preload("res://arte/atlassym2.sprites/sym_cards.tres"),
+		preload("res://arte/atlassym2.sprites/sym_cards_b.tres")
+	],
+	"sym_d": [
 		preload("res://arte/atlassym2.sprites/sym_badguy.tres"),
 		preload("res://arte/atlassym2.sprites/sym_badguy_b.tres")
 	]
@@ -54,6 +60,14 @@ func _ready():
 
 func update_symbol(sym, blurred = false):
 	if symbols.has(sym):
-		set_texture(symbols[sym][int(blurred)])
+		var is_blurred = int(blurred)
+		set_texture(symbols[sym][is_blurred])
 	else:
 		print("Symbol::update_symbol - '%s' symbol not found" % sym)
+
+func animate(symbol_id):
+	var anim_name = "sym_%s" % symbol_id
+	if $AnimationPlayer.has_animation(anim_name):
+		$AnimationPlayer.play(anim_name)
+	else:
+		$AnimationPlayer.play("sym_standard")

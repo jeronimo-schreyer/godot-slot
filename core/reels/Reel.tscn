@@ -252,3 +252,6 @@ margin_bottom = 766.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 texture = ExtResource( 2 )
+
+[node name="Timeout" type="Timer" parent="."]
+[connection signal="timeout" from="Timeout" to="." method="_on_reel_timeout"]

@@ -1,12 +1,14 @@
 extends Control
 
 signal reel_stop
+signal anim_finished
 
 export (String) var strip # symbols separated by comma (,)
 var strip_symbols = []
 var symbol_nodes = []
 var strip_index = 0 # current place in the strip
 var stop_point = -1
+var forced = false
 
 onready var stateMachine = $AnimationTree.get("parameters/playback")
 
@@ -32,9 +34,34 @@ func update_symbols(blurred, update_counter = 1):
 	if strip_index == stop_point:
 		stop_point = -1
 		stateMachine.travel(STATE_IDLE)
+		
+		# regenerate strip if forced
+		if forced:
+			strip_symbols = strip.split(",")
+		else: # stop timeout
+			$Timeout.stop()
+	
+func force(_strip_index):
+	forced = true
+	for i in range(symbol_nodes.size()):
+		var sym_index = strip_index + symbol_nodes.size() - i
+		var symbol = strip_symbols[_strip_index + symbol_nodes.size() - i]
+		strip_symbols.insert(sym_index + 1, symbol)
+	stop_point = strip_index + symbol_nodes.size()
 
-func startSpin():
+func start_spin():
 	stateMachine.travel(STATE_SPINNING)
 
-func stopSpin(stop_point):
-	self.stop_point = stop_point
+func stop_spin(stop_point, turbo):
+	if turbo:
+		force(stop_point)
+	else:
+		self.stop_point = stop_point
+		$Timeout.start()
+
+func animate_symbols(symbol_positions, symbol_id):
+	for symbol_position in symbol_positions:
+		symbol_nodes[symbol_position + 1].animate(symbol_id)
+
+func _on_reel_timeout():
+	force(stop_point)
