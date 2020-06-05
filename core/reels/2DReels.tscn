@@ -1,7 +1,131 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://core/reels/Reel.tscn" type="PackedScene" id=1]
 [ext_resource path="res://core/reels/Reels.gd" type="Script" id=2]
+[ext_resource path="res://arte/fonts/RobotoSlab-ExtraBold.ttf" type="DynamicFontData" id=3]
+
+[sub_resource type="Animation" id=1]
+resource_name = "line by line"
+length = 2.0
+loop = true
+step = 0.01
+tracks/0/type = "value"
+tracks/0/path = NodePath("AnimationPlayer/Line Payout:custom_colors/font_color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.5, 0.62 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("AnimationPlayer/Line Payout:custom_colors/font_outline_modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0.5, 0.62 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 0, 0, 0, 0 ), Color( 0, 0, 0, 1 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("AnimationPlayer/Line Payout:custom_colors/font_color_shadow")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0.5, 0.62 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 0, 0, 0, 0 ), Color( 0, 0, 0, 1 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("AnimationPlayer/Line Payout:custom_constants/shadow_offset_x")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0.5, 0.74, 1.35 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 0, 0, 4 ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("AnimationPlayer/Line Payout:custom_constants/shadow_offset_y")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0.5, 0.74, 1.35 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 0, 0, 3 ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("AnimationPlayer/Line Payout:rect_scale")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0.5, 0.74, 1.35 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1, 1 ), Vector2( 1, 1 ), Vector2( 2, 2 ) ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("AnimationPlayer/Line Payout:modulate")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0.5, 1.18, 1.5 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("AnimationPlayer/Line Payout:visible")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0.5, 1.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ true, false ]
+}
+tracks/8/type = "method"
+tracks/8/path = NodePath(".")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 0.5 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [  ],
+"method": "show_line_by_line"
+} ]
+}
+
+[sub_resource type="DynamicFont" id=2]
+size = 72
+outline_size = 2
+outline_color = Color( 0, 0, 0, 0.501961 )
+use_filter = true
+font_data = ExtResource( 3 )
 
 [node name="Reels" type="HBoxContainer"]
 anchor_left = 0.5
@@ -41,7 +165,7 @@ margin_right = 296.0
 margin_bottom = 600.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-strip = "b,g,b,c,a,s,10,9,10,k,c,s,a,a,b,s,j,9,p,k,10,g,9,k,10,a,k,g,q,g,j,k,10,g,s,j,g,b,g,p,k,b,g,k,10,9,10,c,a,p,j,a,a,c,a,9,b,9,10,k"
+strip = "b,g,b,c,a,s,10,9,10,k,c,s,a,a,b,s,j,9,p,g,9,g,10,k,10,a,k,g,q,g,j,k,10,g,s,j,g,b,g,p,k,b,g,k,10,9,10,c,a,p,j,a,a,c,a,9,b,9,10,k"
 
 [node name="Reel3" parent="." instance=ExtResource( 1 )]
 anchor_left = 0.0
@@ -54,7 +178,7 @@ margin_right = 446.0
 margin_bottom = 600.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-strip = "j,g,j,p,b,q,k,a,9,p,b,p,k,10,b,p,j,j,g,b,10,b,10,q,k,9,s,s,s,c,j,p,s,a,q,p,g,9,s,b,9,p,s,10,g,a,a,g,s,p,j,s,a,q,9,10,g,c,10,p"
+strip = "j,g,j,p,b,q,k,a,9,p,b,p,k,10,b,p,j,9,g,b,10,b,10,q,k,9,s,s,s,c,j,p,s,a,q,p,g,9,s,b,9,p,s,10,g,a,a,g,s,p,j,s,a,q,9,10,g,c,10,p"
 
 [node name="Reel4" parent="." instance=ExtResource( 1 )]
 anchor_left = 0.0
@@ -67,7 +191,7 @@ margin_right = 596.0
 margin_bottom = 600.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-strip = "j,a,p,b,a,10,j,k,10,a,b,c,s,10,b,c,10,10,p,c,10,c,p,a,q,k,k,s,10,j,g,g,k,10,a,c,10,j,g,10,b,k,j,k,a,p,q,10,j,9,c,q,k,k,j,k,j,q,q,c"
+strip = "j,a,p,b,a,9,j,g,p,a,b,c,s,10,b,c,10,10,p,c,10,c,p,a,q,k,k,s,10,j,g,g,k,10,a,c,10,j,g,10,b,k,j,k,a,p,q,10,j,9,c,q,k,k,j,k,j,q,q,c"
 
 [node name="Reel5" parent="." instance=ExtResource( 1 )]
 anchor_left = 0.0
@@ -80,7 +204,35 @@ margin_right = 750.0
 margin_bottom = 600.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-strip = "c,10,g,a,s,10,g,a,k,9,p,a,s,c,b,10,b,a,j,k,c,b,q,k,s,a,g,j,k,p,b,c,b,a,10,c,k,a,k,10,a,s,q,p,g,10,b,c,9,g,j,j,k,g,k,j,c,c,q,b"
+strip = "c,10,g,a,s,10,g,a,k,9,p,a,g,c,b,10,b,a,j,k,c,b,q,k,s,a,g,j,k,p,b,c,b,a,10,c,k,a,k,10,a,s,q,p,g,10,b,c,9,g,j,j,k,g,k,j,c,c,q,b"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+"anims/line by line" = SubResource( 1 )
+
+[node name="Line Payout" type="Label" parent="AnimationPlayer"]
+visible = false
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -512.0
+margin_top = -384.0
+margin_right = 512.0
+margin_bottom = 384.0
+rect_scale = Vector2( 1.2623, 1.2623 )
+rect_pivot_offset = Vector2( 520, 387 )
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 1, 1, 1, 0.851064 )
+custom_colors/font_outline_modulate = Color( 0, 0, 0, 0.851064 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 0.851064 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 0
+text = "$100"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
 [connection signal="reel_stop" from="Reel" to="." method="_on_reel_stop"]
 [connection signal="reel_stop" from="Reel2" to="." method="_on_reel_stop"]
 [connection signal="reel_stop" from="Reel3" to="." method="_on_reel_stop"]

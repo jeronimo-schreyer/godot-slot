@@ -29,7 +29,9 @@ func set_ui_enable(enabled):
 	$main_menu/settings.disabled = !enabled
 	$main_menu/spin.disabled = !enabled
 	$main_menu/turbo.disabled = !enabled
-	
+
+func is_turbo():
+	return $main_menu/turbo.pressed
 
 func _on_spin_pressed():
 	emit_signal("spin")

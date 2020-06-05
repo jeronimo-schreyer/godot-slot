@@ -23,13 +23,13 @@ func play():
 	$"Freespin UI/main_menu/spin/left".text = String(freespins_left - 1)
 	
 	#start reels
-	$"Freespin UI/reel/Reels".start_spin()
+	$"Freespin UI/reel/Reels".start_spin(false)
 	
 	# send request
 	var req = yield(http.send("freespin"), "finished")
 	
 	# stop reels on stop points
-	yield($"Freespin UI/reel/Reels".stop_spin(req.result.STOP), "all_reels_stopped")
+	yield($"Freespin UI/reel/Reels".stop_spin(req.result.STOP, false), "all_reels_stopped")
 	
 	# show ramp
 	if req.result.TOTALPAY > 0:

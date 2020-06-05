@@ -14,27 +14,34 @@ func enter(request):
 
 func play():
 	
+	var is_turbo_play = $"Main UI".is_turbo()
+	
 	# disable UI
 	$"Main UI".set_ui_enable(false)
 	
 	#start reels
-	$"Main UI/reel/Reels".start_spin()
+	$"Main UI/reel/Reels".start_spin(is_turbo_play)
 	
 	# send request
 	var req = yield(http.send("spin"), "finished")
 	#print(req.result.TOTALPAY)
 	
 	# stop reels on stop points
-	yield($"Main UI/reel/Reels".stop_spin(req.result.STOP), "all_reels_stopped")
+	yield($"Main UI/reel/Reels".stop_spin(req.result.STOP, is_turbo_play), "all_reels_stopped")
 	
 	if req.result.TOTALPAY > 0:
+		# show all winning lines
+		$"Main UI/reel/Reels".show_all_winning_lines(req.result.PAYOUTS)
+		
 		# show ramp
 		var ramp_node = ramp.instance()
 		add_child(ramp_node)
-		#yield(ramp_node.ramp(req.result.TOTALPAY), "finished")
+		yield(ramp_node.ramp(req.result.TOTALPAY), "finished")
 		
-		# show winning lines
-		yield($"Main UI/reel/Reels".show_winning_lines(req.result.PAYOUTS, false), "show_winning_lines_finished")
+		#if !is_autoplay:
+		#	# show winning lines
+		#	$"Main UI/reel/Reels".show_winning_lines(req.result.PAYOUTS)
+		$"Main UI/reel/Reels".show_winning_lines(req.result.PAYOUTS)
 	
 	# update ui values
 	$"Main UI".update_jackpot(req.result)

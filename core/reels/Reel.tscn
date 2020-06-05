@@ -197,8 +197,6 @@ margin_left = 0.0
 margin_top = 0.0
 margin_right = 150.0
 margin_bottom = 150.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
 texture = ExtResource( 2 )
 
 [node name="Symbol2" parent="VBoxContainer" instance=ExtResource( 1 )]
@@ -210,8 +208,6 @@ margin_left = 0.0
 margin_top = 154.0
 margin_right = 150.0
 margin_bottom = 304.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
 texture = ExtResource( 2 )
 
 [node name="Symbol3" parent="VBoxContainer" instance=ExtResource( 1 )]
@@ -223,8 +219,6 @@ margin_left = 0.0
 margin_top = 308.0
 margin_right = 150.0
 margin_bottom = 458.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
 texture = ExtResource( 2 )
 
 [node name="Symbol4" parent="VBoxContainer" instance=ExtResource( 1 )]
@@ -236,8 +230,6 @@ margin_left = 0.0
 margin_top = 462.0
 margin_right = 150.0
 margin_bottom = 612.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
 texture = ExtResource( 2 )
 
 [node name="Symbol5" parent="VBoxContainer" instance=ExtResource( 1 )]
@@ -249,8 +241,6 @@ margin_left = 0.0
 margin_top = 616.0
 margin_right = 150.0
 margin_bottom = 766.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
 texture = ExtResource( 2 )
 
 [node name="Timeout" type="Timer" parent="."]

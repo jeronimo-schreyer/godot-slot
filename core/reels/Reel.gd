@@ -49,7 +49,9 @@ func force(_strip_index):
 		strip_symbols.insert(sym_index + 1, symbol)
 	stop_point = strip_index + symbol_nodes.size()
 
-func start_spin():
+func start_spin(turbo):
+	var anim_speed = 64 if turbo else 1
+	$AnimationPlayer.playback_speed = anim_speed
 	stateMachine.travel(STATE_SPINNING)
 
 func stop_spin(stop_point, turbo):
@@ -59,9 +61,14 @@ func stop_spin(stop_point, turbo):
 		self.stop_point = stop_point
 		$Timeout.start()
 
-func animate_symbols(symbol_positions, symbol_id):
-	for symbol_position in symbol_positions:
-		symbol_nodes[symbol_position + 1].animate(symbol_id)
+func animate_symbols(symbol_positions):
+	for i in range(symbol_nodes.size()):
+		if symbol_positions.has(i - 1):
+			symbol_nodes[i].animate()
+			symbol_nodes[i].modulate = Color(1, 1, 1, 1)
+
+func is_symbol(position, symbol):
+	return true
 
 func _on_reel_timeout():
 	force(stop_point)
