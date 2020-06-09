@@ -1,0 +1,15 @@
+[remap]
+
+importer="codeandweb.texturepacker_import_spritesheet"
+type="Resource"
+path="res://.import/atlas2.tpsheet-222ead8ab53e707e4e82407c1228f494.res"
+
+[deps]
+
+files=[ "res://arte/atlas2.sprites/bb_extra__dialogbase_w=623_h=389.tres", "res://arte/atlas2.sprites/bb_extra__doubleup_dialogvillain2_x=410_y=204_w=199_h=221.tres", "res://arte/atlas2.sprites/bb_extra__doubleup_historyposition2_x=78_y=628_w=55_h=46.tres", "res://arte/atlas2.sprites/bb_extra__doubleup_historyposition1_x=38_y=623_w=46_h=52.tres", "res://arte/atlas2.sprites/bb_extra__fsprev_anillojugada1_x=414_y=651_w=26_h=26.tres", "res://arte/atlas2.sprites/bb_extra__fsprev_anillojugadagana_x=498_y=655_w=18_h=18.tres", "res://arte/atlas2.sprites/bb_extra__fsprev_anillojugadapierde_x=418_y=655_w=18_h=18.tres", "res://arte/atlas2.sprites/bb_extra__doubleup_dialogvillain1_x=392_y=234_w=229_h=182.tres", "res://arte/atlas2.sprites/bb_extra__bonus_fsprev_dialogbaseprize_w=506_h=85.tres", "res://arte/atlas2.sprites/bb_extra__fsprev_logo_x=322_y=2_w=384_h=76.tres", "res://arte/atlas2.sprites/bb_extra__doubleup_basehistory_x=35_y=622_w=461_h=58.tres", "res://arte/atlas2.sprites/bb_extra__doubleup_logomain_x=256_y=0_w=518_h=78.tres", "res://arte/atlas2.sprites/bb_extra__doubleup_logodu_x=378_y=61_w=260_h=93.tres", "res://arte/atlas2.sprites/bb_extra__bonus_logo_x=363_y=0_w=277_h=82.tres", "res://arte/atlas2.sprites/bb_extra__baseprize_win_x=318_y=233_w=357_h=57.tres" ]
+
+source_file="res://arte/atlas2.tpsheet"
+dest_files=[ "res://.import/atlas2.tpsheet-222ead8ab53e707e4e82407c1228f494.res", "res://arte/atlas2.sprites/bb_extra__dialogbase_w=623_h=389.tres", "res://arte/atlas2.sprites/bb_extra__doubleup_dialogvillain2_x=410_y=204_w=199_h=221.tres", "res://arte/atlas2.sprites/bb_extra__doubleup_historyposition2_x=78_y=628_w=55_h=46.tres", "res://arte/atlas2.sprites/bb_extra__doubleup_historyposition1_x=38_y=623_w=46_h=52.tres", "res://arte/atlas2.sprites/bb_extra__fsprev_anillojugada1_x=414_y=651_w=26_h=26.tres", "res://arte/atlas2.sprites/bb_extra__fsprev_anillojugadagana_x=498_y=655_w=18_h=18.tres", "res://arte/atlas2.sprites/bb_extra__fsprev_anillojugadapierde_x=418_y=655_w=18_h=18.tres", "res://arte/atlas2.sprites/bb_extra__doubleup_dialogvillain1_x=392_y=234_w=229_h=182.tres", "res://arte/atlas2.sprites/bb_extra__bonus_fsprev_dialogbaseprize_w=506_h=85.tres", "res://arte/atlas2.sprites/bb_extra__fsprev_logo_x=322_y=2_w=384_h=76.tres", "res://arte/atlas2.sprites/bb_extra__doubleup_basehistory_x=35_y=622_w=461_h=58.tres", "res://arte/atlas2.sprites/bb_extra__doubleup_logomain_x=256_y=0_w=518_h=78.tres", "res://arte/atlas2.sprites/bb_extra__doubleup_logodu_x=378_y=61_w=260_h=93.tres", "res://arte/atlas2.sprites/bb_extra__bonus_logo_x=363_y=0_w=277_h=82.tres", "res://arte/atlas2.sprites/bb_extra__baseprize_win_x=318_y=233_w=357_h=57.tres" ]
+
+[params]
+

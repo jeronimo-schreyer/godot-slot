@@ -67,6 +67,11 @@ func animate_symbols(symbol_positions):
 			symbol_nodes[i].animate()
 			symbol_nodes[i].modulate = Color(1, 1, 1, 1)
 
+func fade_out_symbols():
+	for i in range(1, symbol_nodes.size(), 1):
+		symbol_nodes[i].get_node("AnimatedSprite").visible = false
+		symbol_nodes[i].modulate = Color(1, 1, 1, .2)
+
 func is_symbol(position, symbol):
 	return true
 

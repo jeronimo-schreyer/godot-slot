@@ -22,6 +22,5 @@ func play(selection):
 	
 	fsm.exit_state()
 
-
 func _on_prize_selected(selection):
 	print("Bonus::prize_selected - " + selection)

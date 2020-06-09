@@ -1,10 +1,10 @@
-[gd_scene load_steps=92 format=2]
+[gd_scene load_steps=94 format=2]
 
 [ext_resource path="res://estados/bonus/entorno/SM_Prop_Bench_01_2.mesh" type="ArrayMesh" id=1]
 [ext_resource path="res://estados/bonus/entorno/entorno.material" type="Material" id=2]
 [ext_resource path="res://estados/bonus/entorno/glass.material" type="Material" id=3]
 [ext_resource path="res://estados/bonus/entorno/sign.material" type="Material" id=4]
-[ext_resource path="res://estados/bonus/entorno/environment.tres" type="Environment" id=5]
+[ext_resource path="res://estados/bonus/entorno/banker/banker.tscn" type="PackedScene" id=5]
 [ext_resource path="res://estados/bonus/entorno/SM_Prop_Bench_01.mesh" type="ArrayMesh" id=6]
 [ext_resource path="res://estados/bonus/entorno/SM_Env_Sand_Ground_61.mesh" type="ArrayMesh" id=7]
 [ext_resource path="res://estados/bonus/entorno/SM_Bld_Saloon_01_27_6.mesh" type="ArrayMesh" id=8]
@@ -16,10 +16,9 @@
 [ext_resource path="res://estados/bonus/entorno/SM_Bld_Saloon_01_27_11.mesh" type="ArrayMesh" id=14]
 [ext_resource path="res://estados/bonus/entorno/SM_Bld_Saloon_01_27_10.mesh" type="ArrayMesh" id=15]
 [ext_resource path="res://estados/bonus/entorno/SM_Bld_Saloon_01_27.mesh" type="ArrayMesh" id=16]
-[ext_resource path="res://estados/bonus/entorno/Object_2.mesh" type="ArrayMesh" id=17]
+[ext_resource path="res://estados/bonus/bolsa.material" type="Material" id=17]
 [ext_resource path="res://estados/bonus/entorno/Object_3.mesh" type="ArrayMesh" id=18]
 [ext_resource path="res://estados/bonus/entorno/Object_4.mesh" type="ArrayMesh" id=19]
-[ext_resource path="res://estados/bonus/entorno/Object_1.mesh" type="ArrayMesh" id=20]
 [ext_resource path="res://estados/bonus/entorno/SM_Bld_Saloon_01_27_9.mesh" type="ArrayMesh" id=21]
 [ext_resource path="res://estados/bonus/entorno/SM_Bld_Sign_189.mesh" type="ArrayMesh" id=22]
 [ext_resource path="res://estados/bonus/entorno/SM_Bld_Saloon_01_27_8.mesh" type="ArrayMesh" id=23]
@@ -91,36 +90,17 @@
 [ext_resource path="res://estados/bonus/entorno/SM_Prop_Sack_02_7.mesh" type="ArrayMesh" id=89]
 [ext_resource path="res://estados/bonus/entorno/SM_Prop_Sack_02_8.mesh" type="ArrayMesh" id=90]
 [ext_resource path="res://estados/bonus/entorno/SM_Prop_Sack_02_9.mesh" type="ArrayMesh" id=91]
+[ext_resource path="res://estados/bonus/entorno.gd" type="Script" id=92]
+[ext_resource path="res://estados/bonus/entorno/environment.tres" type="Environment" id=93]
+
+[sub_resource type="BoxShape" id=1]
+extents = Vector3( 0.674681, 0.512888, 0.515054 )
 
 [node name="entorno" type="Spatial"]
+script = ExtResource( 92 )
 
 [node name="Default" type="Spatial" parent="."]
 transform = Transform( 0.001, 0, 0, 0, 0.001, 0, 0, 0, 0.001, -6.90817, 0, 0.0702195 )
-
-[node name="Object_1" type="MeshInstance" parent="Default"]
-use_in_baked_light = true
-mesh = ExtResource( 20 )
-material/0 = null
-
-[node name="Object_2" type="MeshInstance" parent="Default"]
-use_in_baked_light = true
-mesh = ExtResource( 17 )
-material/0 = null
-
-[node name="Object_3" type="MeshInstance" parent="Default"]
-use_in_baked_light = true
-mesh = ExtResource( 18 )
-material/0 = null
-
-[node name="Object_4" type="MeshInstance" parent="Default"]
-use_in_baked_light = true
-mesh = ExtResource( 19 )
-material/0 = null
-
-[node name="Object_5" type="MeshInstance" parent="Default"]
-use_in_baked_light = true
-mesh = ExtResource( 28 )
-material/0 = null
 
 [node name="Rectangle Light#1_Light 01" type="SpotLight" parent="Default"]
 transform = Transform( -104.976, 510.633, 853.366, -62.3452, -859.799, 506.812, 992.518, -2.6258e-05, 122.094, 8317.43, 2945.67, 2963.88 )
@@ -439,6 +419,7 @@ mesh = ExtResource( 87 )
 material/0 = ExtResource( 2 )
 
 [node name="SM_Bld_Large_01_33_5" type="MeshInstance" parent="Default"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -12.0282, 0 )
 use_in_baked_light = true
 mesh = ExtResource( 84 )
 material/0 = ExtResource( 2 )
@@ -561,17 +542,32 @@ material/0 = ExtResource( 2 )
 [node name="SM_Prop_Sack_02_7" type="MeshInstance" parent="Default"]
 use_in_baked_light = true
 mesh = ExtResource( 89 )
-material/0 = ExtResource( 2 )
+material/0 = ExtResource( 17 )
+
+[node name="Object_4" type="MeshInstance" parent="Default/SM_Prop_Sack_02_7"]
+use_in_baked_light = true
+mesh = ExtResource( 19 )
+material/0 = null
 
 [node name="SM_Prop_Sack_02_8" type="MeshInstance" parent="Default"]
 use_in_baked_light = true
 mesh = ExtResource( 90 )
-material/0 = ExtResource( 2 )
+material/0 = ExtResource( 17 )
+
+[node name="Object_3" type="MeshInstance" parent="Default/SM_Prop_Sack_02_8"]
+use_in_baked_light = true
+mesh = ExtResource( 18 )
+material/0 = null
 
 [node name="SM_Prop_Sack_02_9" type="MeshInstance" parent="Default"]
 use_in_baked_light = true
 mesh = ExtResource( 91 )
-material/0 = ExtResource( 2 )
+material/0 = ExtResource( 17 )
+
+[node name="Object_5" type="MeshInstance" parent="Default/SM_Prop_Sack_02_9"]
+use_in_baked_light = true
+mesh = ExtResource( 28 )
+material/0 = null
 
 [node name="Spot Light#2_Light 01" type="SpotLight" parent="Default"]
 transform = Transform( -731.439, 11.7757, -681.805, -7.57022e-05, -999.851, -17.2687, -681.906, -12.631, 731.33, 7698.28, 2349.92, 4756.76 )
@@ -593,9 +589,44 @@ spot_angle_attenuation = 0.432443
 
 [node name="Escena-Banco-02" type="Camera" parent="."]
 transform = Transform( -1.04894e-05, 1.04712e-05, -0.00099989, 0, 0.000999945, 1.04718e-05, 0.000999945, 1.09843e-07, -1.04889e-05, -8.14394, 1.92998, 0.0395533 )
+environment = ExtResource( 93 )
 fov = 40.0
 near = 0.1
 far = 30.0
 
-[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
-environment = ExtResource( 5 )
+[node name="RayCast" type="RayCast" parent="Escena-Banco-02"]
+transform = Transform( -1.62921e-07, 0, 1, 0, 1, 0, -1, 0, -1.62921e-07, 0.000447303, 1.95503e-05, 5.53131e-05 )
+cast_to = Vector3( 10, 0, 0 )
+
+[node name="banker" parent="." instance=ExtResource( 5 )]
+transform = Transform( 0.615955, 0, -1.14481, 0, 1.3, 0, 1.14481, 0, 0.615955, -1.15594, 0.577761, -2.02454 )
+
+[node name="Centro" type="RigidBody" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.77392, -0.404049, 0.0701427 )
+mode = 1
+gravity_scale = 0.0
+contacts_reported = 1
+
+[node name="CollisionShape" type="CollisionShape" parent="Centro"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.34108, 1.31371, 0 )
+shape = SubResource( 1 )
+
+[node name="Izquierda" type="RigidBody" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.77392, -0.404049, -0.994867 )
+mode = 1
+gravity_scale = 0.0
+contacts_reported = 1
+
+[node name="CollisionShape" type="CollisionShape" parent="Izquierda"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.34108, 1.31371, 0 )
+shape = SubResource( 1 )
+
+[node name="Derecha" type="RigidBody" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.77392, -0.404049, 1.14669 )
+mode = 1
+gravity_scale = 0.0
+contacts_reported = 1
+
+[node name="CollisionShape" type="CollisionShape" parent="Derecha"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.34108, 1.31371, 0 )
+shape = SubResource( 1 )

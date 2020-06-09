@@ -1,0 +1,243 @@
+{
+	"textures": [
+		{
+			"image": "atlas2.png",
+			"size": {
+				"w": 983,
+				"h": 649
+			},
+			"sprites": [
+				{
+					"filename": "bb_extra__dialogbase_w=623_h=389.png",
+					"region": {
+						"x": 1,
+						"y": 1,
+						"w": 623,
+						"h": 389
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "bb_extra__doubleup_dialogvillain2_x=410_y=204_w=199_h=221.png",
+					"region": {
+						"x": 626,
+						"y": 1,
+						"w": 199,
+						"h": 221
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "bb_extra__doubleup_historyposition2_x=78_y=628_w=55_h=46.png",
+					"region": {
+						"x": 827,
+						"y": 1,
+						"w": 55,
+						"h": 46
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "bb_extra__doubleup_historyposition1_x=38_y=623_w=46_h=52.png",
+					"region": {
+						"x": 884,
+						"y": 1,
+						"w": 46,
+						"h": 52
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "bb_extra__fsprev_anillojugada1_x=414_y=651_w=26_h=26.png",
+					"region": {
+						"x": 827,
+						"y": 49,
+						"w": 26,
+						"h": 26
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "bb_extra__fsprev_anillojugadagana_x=498_y=655_w=18_h=18.png",
+					"region": {
+						"x": 855,
+						"y": 49,
+						"w": 18,
+						"h": 18
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "bb_extra__fsprev_anillojugadapierde_x=418_y=655_w=18_h=18.png",
+					"region": {
+						"x": 932,
+						"y": 1,
+						"w": 18,
+						"h": 18
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "bb_extra__doubleup_dialogvillain1_x=392_y=234_w=229_h=182.png",
+					"region": {
+						"x": 626,
+						"y": 224,
+						"w": 229,
+						"h": 182
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "bb_extra__bonus_fsprev_dialogbaseprize_w=506_h=85.png",
+					"region": {
+						"x": 1,
+						"y": 392,
+						"w": 506,
+						"h": 85
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "bb_extra__fsprev_logo_x=322_y=2_w=384_h=76.png",
+					"region": {
+						"x": 509,
+						"y": 408,
+						"w": 384,
+						"h": 76
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "bb_extra__doubleup_basehistory_x=35_y=622_w=461_h=58.png",
+					"region": {
+						"x": 1,
+						"y": 479,
+						"w": 461,
+						"h": 58
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "bb_extra__doubleup_logomain_x=256_y=0_w=518_h=78.png",
+					"region": {
+						"x": 464,
+						"y": 486,
+						"w": 518,
+						"h": 78
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "bb_extra__doubleup_logodu_x=378_y=61_w=260_h=93.png",
+					"region": {
+						"x": 1,
+						"y": 539,
+						"w": 260,
+						"h": 93
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "bb_extra__bonus_logo_x=363_y=0_w=277_h=82.png",
+					"region": {
+						"x": 263,
+						"y": 566,
+						"w": 277,
+						"h": 82
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "bb_extra__baseprize_win_x=318_y=233_w=357_h=57.png",
+					"region": {
+						"x": 542,
+						"y": 566,
+						"w": 357,
+						"h": 57
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "1.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:048a385d8daf86ae01fe0366d39eaa56:1666602c6313efba7acc3fef41aac369:97dc27c3f2ba10fc25b96631d986d3d6$"
+	}
+}

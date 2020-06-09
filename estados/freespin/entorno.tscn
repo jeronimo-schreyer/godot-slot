@@ -1279,6 +1279,7 @@ spot_angle_attenuation = 0.511217
 
 [node name="CameraFreeSpin-05" type="Camera" parent="."]
 transform = Transform( 0.000999999, -1.77446e-09, -9.11366e-07, 0, 0.000999998, -1.94703e-06, 9.11367e-07, 1.94703e-06, 0.000999998, -1.66055, 1.6767, 2.02983 )
+environment = ExtResource( 2 )
 current = true
 fov = 40.0
 near = 0.1
@@ -1286,9 +1287,7 @@ far = 20.0
 
 [node name="CameraCARTAS-01" type="Camera" parent="."]
 transform = Transform( -0.00019161, -0.000604097, 0.000773532, 0, 0.000788136, 0.000615502, -0.000981471, 0.000117936, -0.000151015, -0.35326, 2.52819, -2.22666 )
+environment = ExtResource( 2 )
 fov = 40.0
 near = 0.1
 far = 20.0
-
-[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
-environment = ExtResource( 2 )

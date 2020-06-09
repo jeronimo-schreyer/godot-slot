@@ -7,9 +7,9 @@ var node
 var last_request
 
 onready var states = {
+	"bonus" : preload("res://estados/bonus.tscn"),
 	"Spin" : preload("res://estados/main.tscn"),
 	"Freespin": preload("res://estados/freespin.tscn"),
-	"bonus" : preload("res://estados/bonus.tscn"),
 	"doubleup" : preload("res://estados/double up.tscn"),
 }
 

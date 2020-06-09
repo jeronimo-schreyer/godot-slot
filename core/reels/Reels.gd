@@ -44,10 +44,12 @@ func show_line_by_line():
 func animate_symbols(positions):
 	for i in range(reels.size()):
 		var symbols_to_animate = []
+		reels[i].fade_out_symbols()
+		
 		for j in range(0, 20, reels.size()):
 			var symbol_position = i + j
 			var node_position = int(floor(j / reels.size()))
-			reels[i].symbol_nodes[node_position + 1].modulate = Color(1, 1, 1, .2)
+			
 			if Array(positions).has(symbol_position):
 				# if reels[i].is_symbol(symbol_position, payout.SYMBOL):
 				symbols_to_animate.push_back(node_position)
